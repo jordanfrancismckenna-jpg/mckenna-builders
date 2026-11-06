@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McKenna Builders &amp; Sons Ltd | Builders in Rayleigh, Essex since 1985</title>
+<meta name="description" content="Family-run builders in Rayleigh, Essex, established 1985. Ornamental brickwork and stonework specialists covering new builds, extensions, renovations and landscaping across south east Essex. Free quotes.">
+<meta name="theme-color" content="#2c6a2e">
+<link rel="icon" href="img/crest.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2c6a2e; --green-dk:#1d4a20; --green-xdk:#14341a;
+  --gold:#cdb935; --gold-lt:#dccb52; --ochre:#b8923f; --red:#c9222c;
+  --brick:#9b3a28; --mortar:#e4e3dc; --paper:#f6f6f2; --ink:#18221a; --muted:#55605a; --line:#cfd1c8;
+  --serif:"Libre Caslon Text",Georgia,"Times New Roman",serif;
+  --sans:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1200px; --gut:clamp(1.25rem,4vw,2.5rem); --head:76px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
+[tabindex="-1"]:focus{outline:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-.01em;margin:0}
+h2{font-size:clamp(2rem,4.2vw,3.1rem);line-height:1.08;margin-bottom:1rem;max-width:22ch}
+h3{font-size:1.3rem;line-height:1.25;margin-bottom:.45rem}
+p{max-width:66ch;margin:0 0 1rem}
+.lead{font-size:clamp(1.1rem,1.6vw,1.25rem);color:var(--muted);max-width:56ch}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:1rem;top:-100px;background:var(--gold);color:var(--ink);padding:.6rem 1rem;z-index:200;font-weight:700;border-radius:3px}
+.skip:focus{top:1rem}
+section{padding:clamp(4rem,8vw,6.5rem) 0}
+.view[hidden],[hidden]{display:none!important}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-weight:700;text-decoration:none;padding:.9rem 1.35rem;border-radius:3px;border:2px solid transparent;cursor:pointer;line-height:1.2;transition:background-color .15s,border-color .15s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-lt)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-dk)}
+.btn-line{border-color:rgba(255,255,255,.75);color:#fff;background:transparent}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-plain{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn-plain:hover{border-color:var(--green)}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.textlink{font-weight:700;color:var(--green);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:var(--gold);background:none;border:0;padding:0;cursor:pointer}
+.textlink:hover{color:var(--green-dk)}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:50;background:var(--green);color:#fff;border-bottom:4px solid var(--gold);box-shadow:inset 0 -6px 0 var(--green-dk)}
+.top .wrap{display:flex;align-items:center;gap:1.5rem;height:var(--head)}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;margin-right:auto;min-width:0}
+.brand img{width:44px;height:auto;flex:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
+.brand b{display:block;font-family:var(--serif);font-size:1.18rem;line-height:1.1;white-space:nowrap}
+.brand small{display:block;font-size:.78rem;color:#d4e1d0;white-space:nowrap}
+.nav ul{display:flex;gap:.25rem;list-style:none;margin:0;padding:0}
+.nav a{display:block;text-decoration:none;font-size:.97rem;color:#e6eee3;padding:.5rem .7rem;border-radius:3px}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav a[aria-current="page"]{color:#fff;box-shadow:inset 0 -3px 0 var(--gold);border-radius:0}
+.top .btn{padding:.6rem 1rem}
+.menu-btn{display:none;background:transparent;border:1.5px solid rgba(255,255,255,.6);color:#fff;border-radius:3px;padding:.5rem .75rem;cursor:pointer;align-items:center;gap:.5rem;font-weight:600}
+.menu-btn span.bars{width:18px;height:12px;position:relative;display:inline-block}
+.menu-btn span.bars::before,.menu-btn span.bars::after,.menu-btn span.bars i{content:"";position:absolute;left:0;right:0;height:2px;background:#fff;transition:transform .2s,opacity .2s}
+.menu-btn span.bars::before{top:0}.menu-btn span.bars i{top:5px}.menu-btn span.bars::after{bottom:0}
+.menu-btn[aria-expanded="true"] span.bars::before{transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span.bars::after{transform:translateY(-5px) rotate(-45deg)}
+.menu-btn[aria-expanded="true"] span.bars i{opacity:0}
+@media (max-width:1020px){
+  .nav{position:fixed;left:0;right:0;top:calc(var(--head) + 4px);background:var(--green-dk);padding:.75rem var(--gut) 1.5rem;border-bottom:4px solid var(--gold);display:none}
+  .nav.open{display:block}
+  .nav ul{flex-direction:column;gap:0}
+  .nav a{font-family:var(--serif);font-size:1.4rem;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.12);border-radius:0}
+  .nav a[aria-current="page"]{box-shadow:none;color:var(--gold)}
+  .menu-btn{display:inline-flex}
+  .top .btn.quote-top{display:none}
+}
+@media (max-width:420px){.brand small{display:none}.brand b{font-size:1.05rem}}
+
+/* ---------- mobile call bar ---------- */
+.callbar{display:none}
+@media (max-width:700px){
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;border-top:3px solid var(--gold);box-shadow:0 -6px 18px rgba(0,0,0,.15)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.9rem .5rem calc(.9rem + env(safe-area-inset-bottom));font-weight:700;text-decoration:none}
+  .callbar a:first-child{background:var(--green);color:#fff}
+  .callbar a:last-child{background:var(--gold);color:var(--ink)}
+  .callbar svg{width:18px;height:18px}
+  body{padding-bottom:64px}
+}
+
+/* ---------- shared bits ---------- */
+.soldier{height:42px;background-color:var(--mortar);background-image:var(--soldier,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='30'%3E%3Crect x='1' y='2' width='16' height='26' rx='1' fill='%239b3a28'/%3E%3Crect x='20' y='2' width='16' height='26' rx='1' fill='%23873222'/%3E%3C/svg%3E"));background-size:var(--soldier-size,38px 30px);background-position:center;box-shadow:inset 0 3px 4px rgba(0,0,0,.18),inset 0 -2px 3px rgba(0,0,0,.12)}
+.band{height:10px;background:linear-gradient(var(--gold) 0 4px,var(--green-dk) 4px 10px)}
+.ribbon{display:inline-block;background:var(--red);color:#fff;font-family:var(--serif);font-size:1rem;line-height:1.3;padding:.3rem 1.2rem;clip-path:polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%)}
+.brickbg{background-color:#8c3424;background-image:var(--wall,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Cg fill='%23a5432f'%3E%3Crect x='1' y='1' width='54' height='18'/%3E%3Crect x='57' y='1' width='26' height='18' fill='%23933a28'/%3E%3Crect x='85' y='1' width='34' height='18'/%3E%3Crect x='-27' y='21' width='26' height='18' fill='%23933a28'/%3E%3Crect x='1' y='21' width='26' height='18' fill='%23933a28'/%3E%3Crect x='29' y='21' width='54' height='18'/%3E%3Crect x='85' y='21' width='26' height='18' fill='%23b04a35'/%3E%3Crect x='113' y='21' width='26' height='18' fill='%23933a28'/%3E%3C/g%3E%3C/svg%3E"));background-size:var(--wall-size,120px 40px)}
+.photo{background:#dcdcd4;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.pagehead{position:relative;isolation:isolate;color:#fff;padding:clamp(3.25rem,7vw,5.5rem) 0 clamp(2.75rem,5vw,4rem);overflow:hidden}
+.pagehead::before{content:"";position:absolute;inset:0;z-index:-2}
+.pagehead::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,52,26,.97),rgba(29,74,32,.9) 55%,rgba(29,74,32,.5))}
+.pagehead h1{font-size:clamp(2.5rem,6vw,4.2rem);line-height:1.04;margin:.9rem 0 1rem;max-width:18ch}
+.pagehead p{color:#dbe6d8;font-size:1.15rem;max-width:54ch;margin:0}
+.crumb{font-size:.92rem;color:#c5d4c1}
+.crumb a{color:#fff}
+
+/* ---------- home: hero ---------- */
+.hero{position:relative;isolation:isolate;color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(20,52,26,.98) 0%,rgba(29,74,32,.92) 50%,rgba(29,74,32,.42) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;padding-top:clamp(3.5rem,8vw,6rem);padding-bottom:clamp(4rem,8vw,6.5rem)}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5.1rem);line-height:1.02;margin:1.25rem 0 1.25rem;max-width:14ch}
+.hero .lede{color:#dfe9dc;font-size:clamp(1.08rem,1.5vw,1.25rem);max-width:44ch;margin-bottom:2rem}
+.hero-facts{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;list-style:none;margin:2.5rem 0 0;padding:0;color:#d2ddcf;font-size:.95rem}
+.hero-facts li{display:flex;align-items:center;gap:.55rem}
+.hero-facts li::before{content:"";width:14px;height:7px;background:var(--gold);flex:none}
+.stack{position:relative;aspect-ratio:1/1;max-width:560px;justify-self:end;width:100%}
+.stack figure{position:absolute;margin:0;box-shadow:0 18px 40px rgba(0,0,0,.35);border:6px solid #fff;background:#fff}
+.stack figure img{width:100%;height:100%;object-fit:cover}
+.stack .s1{left:0;top:4%;width:78%;aspect-ratio:4/3;z-index:2}
+.stack .s2{right:0;bottom:2%;width:52%;aspect-ratio:3/4;z-index:3}
+.stack .s3{right:6%;top:0;width:34%;aspect-ratio:1/1;z-index:1;opacity:.95}
+.stack figcaption{position:absolute;left:-6px;bottom:-2.4rem;font-size:.85rem;color:#cfdccb}
+.hero h1,.hero .ribbon{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .ribbon{animation-delay:.05s}.hero h1{animation-delay:.12s}
+@keyframes rise{from{clip-path:inset(100% 0 0 0);transform:translateY(12px)}to{clip-path:inset(-10% 0 -10% 0);transform:none}}
+@media (max-width:900px){.stack figcaption{display:none}.hero .wrap{grid-template-columns:1fr}.stack{justify-self:start;max-width:520px;margin-top:.5rem}}
+
+/* ---------- home: build sequence ---------- */
+.seq-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem 2rem;margin-bottom:2.5rem}
+.seq-head p{margin:0}
+.seq{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;counter-reset:s}
+.seq li{counter-increment:s;position:relative}
+.seq .photo{aspect-ratio:4/3;border-bottom:5px solid var(--green)}
+.seq li:last-child .photo{border-bottom-color:var(--gold)}
+.seq h3{margin-top:1rem;display:flex;gap:.6rem;align-items:baseline}
+.seq h3::before{content:counter(s);font-family:var(--sans);font-size:.85rem;font-weight:800;color:#fff;background:var(--green);width:1.6rem;height:1.6rem;display:inline-grid;place-items:center;border-radius:50%;flex:none;transform:translateY(-2px)}
+.seq li:last-child h3::before{background:var(--gold);color:var(--ink)}
+.seq p{color:var(--muted);font-size:.98rem;margin:0}
+@media (max-width:960px){.seq{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.seq{grid-template-columns:1fr}}
+
+
+/* ---------- owner ---------- */
+.owner{position:relative;isolation:isolate;color:#fff;overflow:hidden;padding:0;background:var(--green-xdk)}
+.owner>.brickbg{position:absolute;inset:0;z-index:-3}
+.owner::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(20,52,26,.985) 0%,rgba(20,52,26,.95) 46%,rgba(20,52,26,.62) 72%,rgba(20,52,26,.78) 100%)}
+.owner::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,52,26,0) 38%,rgba(20,52,26,.85) 80%,var(--green-xdk) 96%)}
+.owner .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(1.5rem,4vw,3rem);align-items:end}
+.owner .txt{align-self:center;padding:clamp(4rem,8vw,6.5rem) 0}
+.owner h2{font-size:1.15rem;color:var(--gold);margin:0 0 1.25rem;font-weight:700;letter-spacing:0}
+.owner blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,1.75vw,1.45rem);line-height:1.5;max-width:40ch}
+.owner blockquote::before{content:"\201C";display:block;font-style:normal;font-size:5rem;line-height:.5;color:var(--gold);margin-bottom:.6rem}
+.owner .sig{margin:2rem 0 0;display:flex;align-items:center;gap:1rem}
+.owner .sig::before{content:"";width:44px;height:3px;background:var(--gold);flex:none}
+.owner .sig b{display:block;font-family:var(--serif);font-size:1.3rem;font-weight:700}
+.owner .sig span span{color:#b8c7b5;font-size:.95rem}
+.owner .portrait{margin:0;align-self:end;justify-self:end;width:100%;max-width:600px;position:relative;isolation:isolate}
+.owner .portrait::before{content:"";position:absolute;z-index:-1;left:20%;right:-5%;top:0;bottom:15%;background:radial-gradient(closest-side,rgba(232,196,120,.22),rgba(232,196,120,.08) 55%,transparent 100%)}
+.owner .portrait img{width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35)) saturate(1.02)}
+@media (max-width:860px){.owner .wrap{grid-template-columns:1fr}.owner .txt{padding-bottom:1rem}.owner .portrait{justify-self:center;max-width:460px;margin-top:-.5rem}
+  .owner::before{background:linear-gradient(180deg,rgba(20,52,26,.97) 0%,rgba(20,52,26,.9) 55%,rgba(20,52,26,.7) 100%)}}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--green);margin-top:2.25rem}
+.svc{padding:1.75rem 1.5rem 1.75rem 0;border-bottom:1px solid var(--line)}
+.svc:not(:nth-child(3n+1)){padding-left:1.5rem;border-left:1px solid var(--line)}
+.svc .ic{width:44px;height:44px;margin-bottom:1rem;color:var(--green)}
+.svc p{color:var(--muted);margin:0 0 1rem;font-size:.98rem}
+.svc .textlink{font-size:.95rem}
+@media (max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}.svc:not(:nth-child(3n+1)){padding-left:0;border-left:0}.svc:nth-child(2n){padding-left:1.5rem;border-left:1px solid var(--line)}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}.svc:nth-child(2n){padding-left:0;border-left:0}}
+.bg-mortar{background:var(--mortar)}
+
+/* ---------- interiors mosaic ---------- */
+.mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(140px,16vw,210px);gap:.75rem;margin-top:2.25rem}
+.mosaic button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;background:#ddd}
+.mosaic button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.mosaic button:hover img{transform:scale(1.04)}
+.mosaic .m1{grid-column:span 3;grid-row:span 2}.mosaic .m2{grid-column:span 3}.mosaic .m3{grid-column:span 2}.mosaic .m4{grid-column:span 1}
+.mosaic span.cap{position:absolute;left:0;bottom:0;background:rgba(20,52,26,.88);color:#fff;font-size:.85rem;padding:.3rem .65rem}
+@media (max-width:700px){.mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.mosaic .m1{grid-column:span 2;grid-row:span 2}.mosaic .m2{grid-column:span 2}.mosaic .m3,.mosaic .m4{grid-column:span 1}}
+
+/* ---------- quotes ---------- */
+.words{background:var(--green-xdk);color:#fff}
+.words .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(2rem,5vw,4rem);margin-top:2.5rem}
+.words h2{color:#fff}
+.quote{margin:0}
+.quote blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:clamp(1.35rem,2.4vw,1.85rem);line-height:1.35}
+.quote blockquote::before{content:"\201C";display:block;font-style:normal;font-size:4.5rem;line-height:.55;color:var(--gold);margin-bottom:.35rem}
+.quote figcaption{margin-top:1.1rem;color:#b8c7b5;font-size:.98rem}
+.quote figcaption b{color:#fff;font-weight:600}
+@media (max-width:800px){.words .grid{grid-template-columns:1fr}}
+
+/* ---------- area ---------- */
+.area .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.towns{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:1.5rem 0 0;padding:0}
+.towns li{border:1.5px solid var(--green);color:var(--green-dk);padding:.32rem .8rem;border-radius:2px;font-size:.95rem;background:#fff}
+.map{width:100%;height:auto;border:1px solid var(--line);background:#fff}
+@media (max-width:820px){.area .grid{grid-template-columns:1fr}}
+
+.cta{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.cta .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:2rem;align-items:center}
+.cta img{width:96px;height:auto}
+.cta h2{color:#fff;margin:0 0 .4rem}
+.cta p{color:#d7e3d3;margin:0}
+@media (max-width:760px){.cta .wrap{grid-template-columns:1fr}.cta img{width:72px}}
+
+/* ---------- about ---------- */
+.story{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.story .big{font-family:var(--serif);font-size:clamp(1.3rem,2.1vw,1.6rem);line-height:1.5;color:var(--ink);max-width:34ch}
+.story p{color:var(--muted)}
+.crestcard{background:var(--green);color:#fff;text-align:center;padding:2.25rem 2rem 2.5rem;border-top:6px solid var(--gold);position:sticky;top:calc(var(--head) + 1.5rem)}
+.crestcard img{width:min(210px,60%);height:auto;margin:0 auto 1.25rem}
+.crestcard .yr{font-family:var(--serif);font-weight:700;font-size:3.6rem;line-height:1;color:var(--gold);margin:0}
+.crestcard p{color:#d2ddcf;margin:.6rem auto 0;max-width:26ch}
+@media (max-width:860px){.story{grid-template-columns:1fr}.crestcard{position:static}}
+.steps{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:st;border-top:2px solid var(--green)}
+.steps li{counter-increment:st;padding:1.5rem 1.25rem 0 0}
+.steps li::before{content:counter(st);display:block;font-family:var(--serif);font-weight:700;font-size:2.6rem;line-height:1;color:var(--gold);margin-bottom:.6rem;-webkit-text-stroke:1px var(--ochre)}
+.steps p{color:var(--muted);font-size:.98rem;margin:0}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr;row-gap:1rem}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.25rem}
+.value{background:#fff;padding:1.6rem;border-left:5px solid var(--green)}
+.value p{color:var(--muted);margin:0;font-size:.98rem}
+@media (max-width:820px){.values{grid-template-columns:1fr}}
+
+/* ---------- services page ---------- */
+.svc-detail{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.sd{background:#fff;display:grid;grid-template-rows:auto 1fr;border:1px solid var(--line)}
+.sd .swatch{height:84px}
+.sd .body{padding:1.6rem 1.6rem 1.75rem;display:flex;flex-direction:column}
+.sd p{color:var(--muted)}
+.sd ul{margin:0 0 1.25rem;padding-left:1.1rem;color:var(--muted)}
+.sd ul li{margin:.2rem 0}
+.sd ul li::marker{color:var(--green)}
+.sd .btn{align-self:flex-start;margin-top:auto}
+.sw-orn{background-color:#dcd8cf;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24'%3E%3Cg fill='%23b8955a'%3E%3Cpath d='M0 0h22v10H0zM26 0h22v10H26z'/%3E%3C/g%3E%3Cg fill='%239b3a28'%3E%3Cpath d='M13 12h22v10H13zM-11 12h22v10H-11zM37 12h22v10H37z'/%3E%3C/g%3E%3C/svg%3E")}
+.sw-stone{background-color:#c9c4b8;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='84'%3E%3Cg fill='%23ddd8cc'%3E%3Cpath d='M2 2h44v34H2zM50 2h68v22H50zM50 28h30v22H50zM84 28h34v54H84zM2 40h44v42H2zM50 54h30v28H50z'/%3E%3C/g%3E%3C/svg%3E")}
+.sw-herring{background-color:#7d2f20;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cg fill='%23a5432f'%3E%3Cpath d='M0 0h18v8H0zM20 20h18v8H20z'/%3E%3C/g%3E%3Cg fill='%23933a28'%3E%3Cpath d='M20 0h8v18h-8zM0 20h8v18H0z'/%3E%3C/g%3E%3C/svg%3E")}
+.sw-photo{background-size:cover;background-position:center}
+.sw-green{background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='42'%3E%3Cpath d='M0 21h42M21 0v42' stroke='%23ffffff' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E")}
+.sw-lawn{background:linear-gradient(180deg,#8fb6d6 0 40%,#5d8f3a 40% 100%)}
+@media (max-width:820px){.svc-detail{grid-template-columns:1fr}}
+
+/* ---------- projects ---------- */
+.case{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.case .photo{aspect-ratio:4/3}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--green);margin:1.75rem 0;padding:0;list-style:none}
+.facts li{padding:.9rem .75rem .9rem 0;border-bottom:1px solid var(--line)}
+.facts dt,.facts b{display:block;font-size:.85rem;color:var(--muted);font-weight:600}
+.facts span{font-family:var(--serif);font-size:1.1rem}
+@media (max-width:820px){.case{grid-template-columns:1fr}}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem}
+.timeline figure{margin:0}
+.timeline .photo{aspect-ratio:16/10}
+.timeline figcaption{padding-top:.75rem;color:var(--muted);font-size:.98rem}
+.timeline figcaption b{display:block;color:var(--ink);font-family:var(--serif);font-size:1.15rem}
+@media (max-width:820px){.timeline{grid-template-columns:1fr}}
+.case2{display:grid;grid-template-columns:.9fr 1.1fr;gap:0;background:var(--green-xdk);color:#fff}
+.case2 .brickbg{min-height:320px;position:relative}
+.case2 .brickbg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,52,26,0),rgba(20,52,26,.6))}
+.case2 .txt{padding:clamp(2rem,4vw,3rem)}
+.case2 h3{font-size:1.9rem;margin-bottom:.75rem}
+.case2 p{color:#cbd8c8}
+@media (max-width:820px){.case2{grid-template-columns:1fr}.case2 .brickbg{min-height:160px}}
+
+
+.more{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2.25rem}
+.pcard{background:#fff;border:1px solid var(--line);display:grid;grid-template-rows:auto 1fr}
+.pcard .pics{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:3px;aspect-ratio:16/10;background:var(--line)}
+.pcard .pics.one{grid-template-columns:1fr;grid-template-rows:1fr}
+.pcard .pics.two{grid-template-rows:1fr}
+.pcard .pics button{all:unset;cursor:zoom-in;overflow:hidden;position:relative;background:#ddd}
+.pcard .pics button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.pcard .pics button:first-child{grid-row:span 2}
+.pcard .pics.two button:first-child{grid-row:auto}
+.pcard .pics img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.pcard .pics button:hover img{transform:scale(1.04)}
+.pcard .body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column}
+.pcard .where{font-size:.9rem;color:var(--green);font-weight:700;margin-bottom:.3rem}
+.pcard p{color:var(--muted);font-size:.98rem}
+.pcard .quote-sm{font-family:var(--serif);font-style:italic;color:var(--ink);border-left:3px solid var(--gold);padding-left:.9rem;margin:0 0 1rem}
+.pcard .btn{align-self:flex-start;margin-top:auto;padding:.7rem 1.1rem}
+@media (max-width:820px){.more{grid-template-columns:1fr}}
+.words .grid.three{grid-template-columns:repeat(3,1fr)}
+.words .grid.three .quote blockquote{font-size:clamp(1.15rem,1.6vw,1.38rem)}
+@media (max-width:980px){.words .grid.three{grid-template-columns:1fr}}
+
+
+/* ---------- featured (home) ---------- */
+.feat-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:1rem;margin-top:2.25rem;align-items:stretch}
+.feat-ba{display:flex;flex-direction:column}
+.feat-ba .ba{flex:1;min-height:360px}
+.ba-cap{margin:.75rem 0 0;color:var(--muted);font-size:.95rem}
+.ba-cap b{display:block;font-family:var(--serif);color:var(--ink);font-size:1.15rem}
+.feat-tiles{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.2fr 1fr 1fr;gap:1rem}
+.ftile{all:unset;cursor:zoom-in;position:relative;overflow:hidden;background:#ddd;min-height:180px}
+.ftile.f-wide{grid-column:span 2}
+.ftile:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.ftile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.ftile:hover img{transform:scale(1.04)}
+.fcap{position:absolute;left:0;right:0;bottom:0;padding:2.5rem 1rem .85rem;background:linear-gradient(transparent,rgba(10,25,12,.85));color:#fff;font-family:var(--serif);font-size:1.05rem;line-height:1.3}
+.fcap small{display:block;font-family:var(--sans);font-size:.8rem;color:var(--gold);font-weight:700;margin-bottom:.15rem}
+@media (max-width:900px){.feat-grid{grid-template-columns:1fr}.feat-ba .ba{min-height:0;aspect-ratio:4/3}}
+@media (max-width:520px){.feat-tiles{grid-template-columns:1fr;grid-template-rows:none}.ftile.f-wide{grid-column:auto}.ftile{min-height:220px}}
+
+/* ---------- before / after ---------- */
+.ba{position:relative;overflow:hidden;background:#222;aspect-ratio:4/3;user-select:none;touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba-before{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba::after{content:"";position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:var(--gold);box-shadow:0 0 8px rgba(0,0,0,.4);pointer-events:none}
+.ba-handle{position:absolute;top:50%;left:var(--pos);width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.35);pointer-events:none;z-index:2}
+.ba-handle svg{width:24px;height:24px}
+.ba-tag{position:absolute;top:.75rem;background:rgba(20,52,26,.88);color:#fff;font-size:.8rem;font-weight:700;padding:.25rem .6rem;z-index:2;pointer-events:none}
+.ba-tag-b{left:.75rem}.ba-tag-a{right:.75rem;background:var(--gold);color:var(--ink)}
+.ba-range{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:3}
+.ba:has(.ba-range:focus-visible){outline:3px solid var(--gold);outline-offset:3px}
+.ba-list{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+.ba-fig{margin:0}
+.ba-fig .ba{aspect-ratio:4/3}
+.ba-fig figcaption{padding-top:.9rem;color:var(--muted);font-size:.98rem}
+.ba-fig figcaption b{display:block;font-family:var(--serif);color:var(--ink);font-size:1.3rem;margin-bottom:.3rem}
+@media (max-width:760px){.ba-list{grid-template-columns:1fr}}
+
+/* ---------- gallery by job ---------- */
+.gproj{padding:0;margin:0 0 clamp(3rem,6vw,4.5rem)}
+.gproj[hidden]{display:none}
+.gp-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;border-bottom:2px solid var(--green);padding-bottom:.75rem;margin-bottom:.9rem}
+.gp-head .where{display:block;font-size:.9rem;color:var(--green);font-weight:700}
+.gp-head h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:0;max-width:none}
+.gp-count{font-size:.92rem;color:var(--muted);white-space:nowrap}
+.gp-blurb{color:var(--muted);margin-bottom:1.25rem}
+.gp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.5rem}
+.gp-grid button{all:unset;cursor:zoom-in;aspect-ratio:4/3;overflow:hidden;background:#ddd;position:relative}
+.gp-grid button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.gp-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.gp-grid button:hover img{transform:scale(1.05)}
+.gp-grid .extra{display:none}
+.gproj.open .gp-grid .extra{display:block}
+.gp-more{margin-top:1rem}
+@media (max-width:520px){.gp-grid{grid-template-columns:repeat(2,1fr)}}
+.pcard .actions{margin-top:auto;gap:1.25rem}
+.pcard .actions .btn{margin-top:0}
+
+/* ---------- gallery ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.75rem}
+.filters button{border:1.5px solid var(--line);background:#fff;padding:.55rem 1rem;border-radius:999px;cursor:pointer;font-weight:600;font-size:.95rem}
+.filters button:hover{border-color:var(--green)}
+.filters button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.filters .count{font-weight:400;opacity:.75;margin-left:.25rem}
+.grid-g{columns:3 280px;column-gap:1rem}
+.grid-g button{all:unset;display:block;width:100%;margin:0 0 1rem;break-inside:avoid;cursor:zoom-in;position:relative;background:#ddd;overflow:hidden}
+.grid-g button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.grid-g img{width:100%;height:auto;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.grid-g button:hover img{transform:scale(1.03)}
+.grid-g .cap{position:absolute;left:0;right:0;bottom:0;padding:1.5rem .9rem .7rem;background:linear-gradient(transparent,rgba(10,25,12,.82));color:#fff;font-size:.92rem;opacity:0;transition:opacity .2s}
+.grid-g button:hover .cap,.grid-g button:focus-visible .cap{opacity:1}
+@media (hover:none){.grid-g .cap{opacity:1}}
+.g-note{color:var(--muted);font-size:.95rem;margin-top:1rem}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(9,18,10,.98);display:grid;grid-template-rows:auto 1fr auto;color:#fff}
+.lb-top{display:flex;justify-content:space-between;align-items:center;padding:.9rem var(--gut)}
+.lb-count{font-size:.95rem;color:#c3d0bf}
+.lb-btn{background:rgba(255,255,255,.1);border:0;color:#fff;width:48px;height:48px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb-btn:hover{background:rgba(255,255,255,.2)}
+.lb-btn svg{width:22px;height:22px}
+.lb-stage{position:relative;display:grid;place-items:center;min-height:0;overflow:hidden;padding:0 72px;touch-action:pan-y}
+.lb-stage img{max-width:100%;max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px);object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.5);user-select:none;-webkit-user-drag:none}
+.lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%)}
+.lb-prev{left:12px}.lb-next{right:12px}
+.lb-cap{max-width:none;margin:0;padding:1rem var(--gut) 1.4rem;text-align:center;font-family:var(--serif);font-size:1.1rem}
+@media (max-width:600px){.lb-stage{padding:0 8px}.lb-prev,.lb-next{top:auto;bottom:10px;transform:none;background:rgba(0,0,0,.55)}.lb-prev{left:var(--gut)}.lb-next{right:var(--gut)}.lb-stage{padding-bottom:68px}}
+
+/* ---------- contact ---------- */
+.enq{display:grid;grid-template-columns:1.6fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media (max-width:920px){.enq{grid-template-columns:1fr}}
+form{display:grid;gap:2rem}
+fieldset{border:0;padding:0;margin:0;display:grid;gap:1.1rem;min-width:0}
+legend{font-family:var(--serif);font-weight:700;font-size:1.45rem;margin-bottom:1rem;padding:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+@media (max-width:600px){.row{grid-template-columns:1fr}}
+.field{display:grid;gap:.35rem}
+label,.lbl{font-weight:600;font-size:.98rem}
+.opt{font-weight:400;color:var(--muted)}
+input[type=text],input[type=email],input[type=tel],select,textarea{font:inherit;color:var(--ink);background:#fff;border:1.5px solid #b6bab0;border-radius:3px;padding:.75rem .85rem;width:100%;min-height:48px}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%232c6a2e' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center;padding-right:2.5rem}
+input:focus,select:focus,textarea:focus{border-color:var(--green);outline:3px solid rgba(44,106,46,.22);outline-offset:0}
+textarea{min-height:9rem;resize:vertical}
+.hint{font-size:.9rem;color:var(--muted)}
+.err{font-size:.9rem;color:#b3141e;font-weight:600}
+.err:empty{display:none}
+[aria-invalid="true"]{border-color:#b3141e!important}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{font-weight:500;display:inline-flex;align-items:center;gap:.45rem;border:1.5px solid #b6bab0;background:#fff;padding:.55rem .9rem;border-radius:3px;cursor:pointer;min-height:44px}
+.chips input{accent-color:var(--green);margin:0;width:16px;height:16px}
+.chips label:has(input:checked){border-color:var(--green);background:#e8f0e6}
+.chips label:has(input:focus-visible){outline:3px solid var(--gold);outline-offset:2px}
+.side{background:var(--mortar);padding:1.75rem;border-top:6px solid var(--green);position:sticky;top:calc(var(--head) + 1.5rem)}
+.side h2{font-size:1.6rem;margin-bottom:.5rem}
+.side dl{margin:0}
+.side dt{font-weight:600;font-size:.88rem;color:var(--muted);margin-top:1.1rem}
+.side dd{margin:.15rem 0 0;font-family:var(--serif);font-size:1.25rem;word-break:break-word}
+.side dd a{text-decoration:none}.side dd a:hover{text-decoration:underline}
+.side .note{color:var(--muted);font-size:.95rem;margin:1.25rem 0 0}
+@media (max-width:920px){.side{position:static}}
+.ready{scroll-margin-top:calc(var(--head) + 1rem);background:#fff;border:2px solid var(--green);border-top-width:8px;padding:clamp(1.25rem,3vw,2rem)}
+.ready h2{font-size:1.9rem;margin-bottom:.6rem}
+.ready pre{white-space:pre-wrap;font-family:var(--sans);font-size:.95rem;background:var(--paper);border:1px solid var(--line);padding:1rem;margin:1rem 0 1.25rem;max-height:20rem;overflow:auto}
+.status{font-size:.95rem;color:var(--green-dk);font-weight:600;margin:.85rem 0 0;min-height:1.4em}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#a7b2aa;font-size:.95rem;border-top:4px solid var(--gold)}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2rem;padding-top:3rem;padding-bottom:2rem}
+footer h3{font-size:1.05rem;color:#fff;margin-bottom:.7rem}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:.3rem 0}
+footer a{color:#dbe4d8;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .fbrand{display:flex;gap:.9rem;align-items:center;margin-bottom:.9rem}
+footer .fbrand img{width:52px;height:auto}
+footer .fbrand b{font-family:var(--serif);color:#fff;font-size:1.2rem;display:block}
+footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:1.25rem;font-size:.85rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
+
+/* ---------- brick-laying page transition ---------- */
+#wall{position:fixed;inset:0;z-index:100;pointer-events:none;overflow:hidden;visibility:hidden}
+#wall.on{visibility:visible;pointer-events:auto}
+#wall .brick{position:absolute;top:0;left:0;will-change:transform;background-size:100% 100%;filter:drop-shadow(0 3px 3px rgba(0,0,0,.4))}
+#wall .mortar{position:absolute;inset:0;background:#aaa290 var(--mortar-tex);background-size:256px 256px;opacity:0;box-shadow:inset 0 0 120px rgba(0,0,0,.25)}
+#wall .plaque{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:1rem;background:var(--green);color:#fff;border:3px solid var(--gold);box-shadow:0 0 0 7px var(--green),0 14px 40px rgba(0,0,0,.35);font-family:var(--serif);font-weight:700;font-size:clamp(1.15rem,2.6vw,1.75rem);padding:.7rem 1.5rem .7rem 1rem;white-space:nowrap;opacity:0}
+#wall .plaque img{width:42px;height:auto}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero h1,.hero .ribbon{animation:none}
+  .mosaic img,.grid-g img{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" id="skiplink">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="McKenna Builders and Sons, home">
+      <img src="img/crest.webp" alt="" width="390" height="480">
+      <span><b>McKenna &amp; Sons Builders</b><small>Rayleigh, Essex. Est. 1985</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li><a href="#services" data-nav="services">Services</a></li>
+        <li><a href="#projects" data-nav="projects">Projects</a></li>
+        <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-gold quote-top" href="#contact">Get a free quote</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav"><span class="bars"><i></i></span><span>Menu</span></button>
+  </div>
+</header>
+
+<div id="main" tabindex="-1">
+
+<!-- ======================= HOME ======================= -->
+<main class="view" id="view-home" data-title="McKenna Builders & Sons Ltd | Builders in Rayleigh, Essex since 1985">
+  <section class="hero" aria-labelledby="h-home" style="padding:0">
+    <div class="brickbg" style="position:absolute;inset:0;z-index:-2"></div>
+    <div class="wrap">
+      <div>
+        <span class="ribbon">Est. 1985</span>
+        <h1 id="h-home">Fine brickwork and honest building, since 1985.</h1>
+        <p class="lede">A family firm from Rayleigh. We specialise in ornamental brickwork and stonework, and we build everything else too: new homes, extensions, renovations and landscaping across south east Essex.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="#contact">Get a free quote</a>
+          <a class="btn btn-line" href="tel:+447860343567"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>07860 343567</a>
+        </div>
+        <ul class="hero-facts">
+          <li>Family run, father and sons</li>
+          <li>Free quotes</li>
+          <li>All of south east Essex</li>
+        </ul>
+      </div>
+      <div class="stack" aria-label="Recent work">
+        <figure class="s3"><img src="img/t/gh-walls.webp" alt="Red brick garden walls with stone copings" width="600" height="600"></figure>
+        <figure class="s1"><img src="img/ch-after.webp" alt="A chalet bungalow rebuilt as a two-storey family home" width="1400" height="1027" fetchpriority="high"></figure>
+        <figure class="s2"><img src="img/bg-dining.webp" alt="Dining area under a roof lantern beside a red brick feature wall" width="1050" height="1400"><figcaption>Recent work</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <div class="soldier" aria-hidden="true"></div>
+
+  <section aria-labelledby="h-seq">
+    <div class="wrap">
+      <div class="seq-head">
+        <div>
+          <h2 id="h-seq">From bare ground to first guests</h2>
+          <p class="lead">Our most recent project: a brand new holiday let, built from scratch for a client to run on Airbnb.</p>
+        </div>
+        <a class="textlink" href="#projects">Read the full project</a>
+      </div>
+      <ol class="seq">
+        <li><div class="photo"><img src="img/build-shell.webp" alt="The new build as a clad shell with open window and door openings" width="1067" height="626" loading="lazy"></div><h3>The shell goes up</h3><p>Frame, roof and cladding on, with openings ready for windows and doors.</p></li>
+        <li><div class="photo"><img src="img/build-side.webp" alt="Side view of the new build during construction, surrounded by garden" width="1067" height="626" loading="lazy"></div><h3>Closing it in</h3><p>Built to sit quietly in an established garden.</p></li>
+        <li><div class="photo"><img src="img/build-decking.webp" alt="Decking frame being laid in front of the finished cladding and glazing" width="1067" height="626" loading="lazy"></div><h3>Glazing and decking</h3><p>Sliding doors in and the decking frame laid out.</p></li>
+        <li><div class="photo"><img src="img/exterior.webp" alt="The finished new build with planted borders, lawn and decking" width="800" height="600" loading="lazy"></div><h3>Ready for guests</h3><p>Finished, furnished and landscaped.</p></li>
+      </ol>
+    </div>
+  </section>
+
+
+  <section class="owner" aria-labelledby="h-owner">
+    <div class="brickbg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="txt">
+        <h2 id="h-owner">A word from the owner</h2>
+        <blockquote>Throughout my years in the building trade, I’ve always believed that every job, no matter how big or small, deserves the same care and attention I would give to my own home – which is an ethos that has been instilled in the whole team. Whether it’s building an extension or putting up a garden wall, I take genuine pride in my work and never lose sight of the trust people place in us when working on their homes. I love what I do, and I hope that pride and passion are reflected in every job McKenna Builder’s completes.</blockquote>
+        <p class="sig"><span><b>John McKenna</b><span>Owner, McKenna Builders &amp; Sons</span></span></p>
+      </div>
+      <figure class="portrait"><img src="img/john.webp" alt="John McKenna, owner of McKenna Builders and Sons, smiling" width="900" height="773" loading="lazy"></figure>
+    </div>
+  </section>
+  <section class="bg-mortar" aria-labelledby="h-svc">
+    <div class="wrap">
+      <h2 id="h-svc">What we do</h2>
+      <p class="lead">Two crafts we're known for, and everything else a build needs.</p>
+      <div class="svc-grid" id="svc-summary"></div>
+    </div>
+  </section>
+
+  <section class="featured" aria-labelledby="h-feat">
+    <div class="wrap">
+      <div class="seq-head">
+        <div>
+          <h2 id="h-feat">Featured work</h2>
+          <p class="lead">A few favourites from recent jobs across south east Essex. Tap a photo to see it larger.</p>
+        </div>
+        <a class="textlink" href="#projects">See all our projects</a>
+      </div>
+      <div class="feat-grid">
+        <div class="feat-ba" id="feat-ba"></div>
+        <div class="feat-tiles" id="feat-tiles"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="words" aria-labelledby="h-words">
+    <div class="wrap">
+      <h2 id="h-words">What our customers say</h2>
+      <div class="grid three">
+        <figure class="quote"><blockquote>Excellent job, nice lads &amp; John always kept us up to date. Wouldn't hesitate to recommend highly.</blockquote><figcaption><b>Linda Starkey</b>, recommends us on Facebook</figcaption></figure>
+        <figure class="quote"><blockquote>I still cannot believe how they transformed my small bungalow into a stunning 5 bedroom 4 bathroom house.</blockquote><figcaption><b>Ed Ward</b>, customer, on Facebook</figcaption></figure>
+        <figure class="quote"><blockquote>If it’s possible for a roof to be a thing of beauty then this is certainly in the number one spot! You won’t find better if you are looking to do a project of any size in your home. They are a pleasure to have on site and are some of the tidiest builders I have ever come across!</blockquote><figcaption><b>A client in Hanningfield</b>, shared on our Instagram</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="area" aria-labelledby="h-area">
+    <div class="wrap grid">
+      <div>
+        <h2 id="h-area">Working across south east Essex</h2>
+        <p class="lead">Based in Rayleigh, we take on work throughout the area. Not sure if we cover you? Just ask.</p>
+        <ul class="towns"><li>Rayleigh</li><li>Hockley</li><li>Hullbridge</li><li>Rochford</li><li>Benfleet</li><li>Wickford</li><li>Leigh-on-Sea</li><li>Southend-on-Sea</li><li>Canvey Island</li></ul>
+      </div>
+      <div data-map></div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="h-cta-home" data-cta></section>
+</main>
+
+<!-- ======================= ABOUT ======================= -->
+<main class="view" id="view-about" hidden data-title="About us | McKenna Builders & Sons Ltd">
+  <header class="pagehead"><div class="brickbg" style="position:absolute;inset:0;z-index:-2"></div><div class="wrap">
+    <p class="crumb"><a href="#home">Home</a> / About</p>
+    <h1 id="h-about">A family firm, built on one name.</h1>
+    <p>John McKenna and his sons have been building in and around Rayleigh since 1985.</p>
+  </div></header>
+  <div class="soldier" aria-hidden="true"></div>
+
+  <section aria-labelledby="h-story">
+    <div class="wrap story">
+      <div>
+        <h2 id="h-story" class="sr">Our story</h2>
+        <p class="big">The McKenna name has been on building sites across south east Essex for over forty years.</p>
+        <p>What started in 1985 is now a father-and-sons business, and the trade has been handed down along with the attention to detail. Our speciality is ornamental brickwork and stonework, the kind of finish that makes a house stand out on the street. We're just as at home building a complete property from bare ground.</p>
+        <p>Being a family firm means the people who quote for your job are the people who build it. Customers tell us they value being kept up to date, so we make a point of it from the first visit to the final handover.</p>
+        <p>We're always happy for anyone thinking of using us to see our finished work and to speak to people we've built for.</p>
+        <div class="actions" style="margin-top:1.75rem">
+          <a class="btn btn-green" href="#projects">See our projects</a>
+          <a class="btn btn-plain" href="#contact">Get a free quote</a>
+        </div>
+      </div>
+      <aside class="crestcard" aria-label="Established 1985">
+        <img src="img/crest.webp" alt="The McKenna family crest: a green shield with three gold lions and a white band, above a red ribbon reading McKenna" width="390" height="480">
+        <p class="yr">1985</p>
+        <p>Family run in Rayleigh, Essex, for over forty years.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bg-mortar" aria-labelledby="h-how">
+    <div class="wrap">
+      <h2 id="h-how">How we work</h2>
+      <p class="lead">A straightforward process, with one family looking after your job from start to finish.</p>
+      <ol class="steps">
+        <li><h3>Get in touch</h3><p>Call, message or send an enquiry. Tell us what you have in mind.</p></li>
+        <li><h3>Site visit and free quote</h3><p>We come and look at the job, talk it through and give you a clear quote.</p></li>
+        <li><h3>We build</h3><p>The work is done by us, and we keep you up to date as it goes.</p></li>
+        <li><h3>Handover</h3><p>We walk the finished job with you and make sure you're happy.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-values">
+    <div class="wrap">
+      <h2 id="h-values">What you can expect</h2>
+      <div class="values">
+        <div class="value"><h3>Craft you can see</h3><p>Ornamental brickwork and stonework are our speciality, and that care goes into every job.</p></div>
+        <div class="value"><h3>Kept in the loop</h3><p>You'll know what's happening and when. It's the thing customers mention most.</p></div>
+        <div class="value"><h3>Local and accountable</h3><p>We live and work in south east Essex, so our reputation is on every street we build on.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="words" aria-labelledby="h-words2">
+    <div class="wrap">
+      <h2 id="h-words2">In our customers' words</h2>
+      <div class="grid three">
+        <figure class="quote"><blockquote>Excellent job, nice lads &amp; John always kept us up to date. Wouldn't hesitate to recommend highly.</blockquote><figcaption><b>Linda Starkey</b>, recommends us on Facebook</figcaption></figure>
+        <figure class="quote"><blockquote>I still cannot believe how they transformed my small bungalow into a stunning 5 bedroom 4 bathroom house.</blockquote><figcaption><b>Ed Ward</b>, customer, on Facebook</figcaption></figure>
+        <figure class="quote"><blockquote>If it’s possible for a roof to be a thing of beauty then this is certainly in the number one spot! You won’t find better if you are looking to do a project of any size in your home. They are a pleasure to have on site and are some of the tidiest builders I have ever come across!</blockquote><figcaption><b>A client in Hanningfield</b>, shared on our Instagram</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- ======================= SERVICES ======================= -->
+<main class="view" id="view-services" hidden data-title="Services | McKenna Builders & Sons Ltd">
+  <header class="pagehead"><div class="brickbg" style="position:absolute;inset:0;z-index:-2"></div><div class="wrap">
+    <p class="crumb"><a href="#home">Home</a> / Services</p>
+    <h1>Our services</h1>
+    <p>Specialists in ornamental brickwork and stonework, and covering all areas of construction. Every job starts with a free quote.</p>
+  </div></header>
+  <div class="soldier" aria-hidden="true"></div>
+  <section aria-label="Services">
+    <div class="wrap">
+      <div class="svc-detail" id="svc-detail"></div>
+    </div>
+  </section>
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- ======================= PROJECTS ======================= -->
+<main class="view" id="view-projects" hidden data-title="Projects | McKenna Builders & Sons Ltd">
+  <header class="pagehead"><div class="brickbg" style="position:absolute;inset:0;z-index:-2"></div><div class="wrap">
+    <p class="crumb"><a href="#home">Home</a> / Projects</p>
+    <h1>Recent projects</h1>
+    <p>Extensions, rebuilds, roofs, gardens and stonework, with photos of every stage.</p>
+  </div></header>
+  <div class="soldier" aria-hidden="true"></div>
+
+  <section aria-labelledby="h-p1">
+    <div class="wrap">
+      <div class="case">
+        <div>
+          <span class="ribbon">Latest project</span>
+          <h2 id="h-p1" style="margin-top:1rem">New-build holiday let</h2>
+          <p class="lead">A brand new property, built from scratch for a client to run as an Airbnb.</p>
+          <ul class="facts">
+            <li><b>Type</b><span>New build</span></li>
+            <li><b>Use</b><span>Holiday let</span></li>
+            <li><b>Area</b><span>South east Essex</span></li>
+          </ul>
+          <p>We took this one from an empty plot to a finished, furnished property. The single-storey building has dark timber cladding under a slate roof, with sliding doors opening onto new decking and a planted garden. Inside there's an open-plan living room and kitchenette, a separate fitted kitchen, a bedroom with ensuite and a marble-effect tiled bathroom.</p>
+          <div class="actions" style="margin-top:1.5rem">
+            <button class="btn btn-green" type="button" data-open-gallery="airbnb">View all photos</button>
+            <a class="btn btn-plain" href="#contact">Plan a similar build</a>
+          </div>
+        </div>
+        <div class="photo"><img src="img/exterior.webp" alt="The finished holiday let with decking and planted borders" width="800" height="600" loading="lazy"></div>
+      </div>
+
+      <h3 style="margin-top:4rem;font-size:1.6rem">How it came together</h3>
+      <div class="timeline">
+        <figure><div class="photo"><img src="img/build-shell.webp" alt="Clad shell with openings for windows and doors" width="1067" height="626" loading="lazy"></div><figcaption><b>Shell and roof</b>Structure up, roof on and cladding finished.</figcaption></figure>
+        <figure><div class="photo"><img src="img/build-side.webp" alt="New build seen from the garden during construction" width="1067" height="626" loading="lazy"></div><figcaption><b>Openings formed</b>Window and door openings ready for glazing.</figcaption></figure>
+        <figure><div class="photo"><img src="img/build-decking.webp" alt="Decking frame laid in front of the new glazing" width="1067" height="626" loading="lazy"></div><figcaption><b>Glazing and decking</b>Doors fitted and the decking frame laid out.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-mortar" aria-labelledby="h-p2">
+    <div class="wrap">
+      <div class="case2">
+        <div class="brickbg" aria-hidden="true"></div>
+        <div class="txt">
+          <h3 id="h-p2">Bungalow to five-bedroom family home</h3>
+          <p>A small bungalow rebuilt and extended into a five-bedroom, four-bathroom house.</p>
+          <figure class="quote" style="margin-top:1.5rem"><blockquote>I still cannot believe how they transformed my small bungalow into a stunning 5 bedroom 4 bathroom house.</blockquote><figcaption><b>Ed Ward</b>, the homeowner</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-more">
+    <div class="wrap">
+      <h2 id="h-ba">Before and after</h2>
+      <p class="lead">Drag the handle to see how far these homes have come.</p>
+      <div class="ba-list" id="ba-list"></div>
+      <h2 id="h-more" style="margin-top:clamp(3.5rem,7vw,5rem)">All our projects</h2>
+      <p class="lead">Every job is shown in full in the gallery, from the first dig to the finished home.</p>
+      <div class="more" id="more-projects"></div>
+    </div>
+  </section>
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- ======================= GALLERY ======================= -->
+<main class="view" id="view-gallery" hidden data-title="Gallery | McKenna Builders & Sons Ltd">
+  <header class="pagehead"><div class="brickbg" style="position:absolute;inset:0;z-index:-2"></div><div class="wrap">
+    <p class="crumb"><a href="#home">Home</a> / Gallery</p>
+    <h1>Gallery</h1>
+    <p>Every photo grouped by job, so you can follow each one from the first dig to the finished home. Select a photo to see it full size.</p>
+  </div></header>
+  <div class="soldier" aria-hidden="true"></div>
+  <section aria-label="Photo gallery">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filter photos" id="filters"></div>
+      <div id="grid-g"></div>
+      <p class="g-note">We post new photos as jobs come together on <a href="https://www.instagram.com/mckennabuildersandsons/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.facebook.com/p/McKenna-Builders-Sons-Ltd-100057448479010/" target="_blank" rel="noopener">Facebook</a>.</p>
+    </div>
+  </section>
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- ======================= CONTACT ======================= -->
+<main class="view" id="view-contact" hidden data-title="Get a free quote | McKenna Builders & Sons Ltd">
+  <header class="pagehead"><div class="brickbg" style="position:absolute;inset:0;z-index:-2"></div><div class="wrap">
+    <p class="crumb"><a href="#home">Home</a> / Contact</p>
+    <h1>Get a free quote</h1>
+    <p>Tell us a little about your project and how to reach you, and we'll get back to you to talk it through.</p>
+  </div></header>
+  <div class="soldier" aria-hidden="true"></div>
+
+  <section>
+    <div class="wrap enq">
+      <div>
+        <form id="enquiry-form" novalidate>
+          <fieldset>
+            <legend>Your details</legend>
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" aria-describedby="e-name">
+              <span class="err" id="e-name" aria-live="polite"></span>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="f-phone">Phone</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="e-phone">
+                <span class="err" id="e-phone" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="opt">(optional)</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email">
+                <span class="err" id="e-email" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-town">Town or postcode of the job</label>
+              <input id="f-town" name="town" type="text" autocomplete="postal-code" aria-describedby="e-town">
+              <span class="err" id="e-town" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <span class="lbl" id="l-contact">Best way to reach you</span>
+              <div class="chips" role="radiogroup" aria-labelledby="l-contact">
+                <label><input type="radio" name="contact" value="Phone call" checked> Phone call</label>
+                <label><input type="radio" name="contact" value="Text or WhatsApp"> Text or WhatsApp</label>
+                <label><input type="radio" name="contact" value="Email"> Email</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your project</legend>
+            <div class="field">
+              <span class="lbl" id="l-type">Type of work <span class="opt">(choose any)</span></span>
+              <div class="chips" role="group" aria-labelledby="l-type" id="type-chips"></div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="f-when">When would you like to start?</label>
+                <select id="f-when" name="when">
+                  <option>As soon as possible</option>
+                  <option>In the next 3 months</option>
+                  <option>In 3 to 6 months</option>
+                  <option>Later than 6 months</option>
+                  <option selected>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-plans">Drawings or planning</label>
+                <select id="f-plans" name="plans">
+                  <option selected>Not sure</option>
+                  <option>Not started yet</option>
+                  <option>Drawings in progress</option>
+                  <option>Drawings ready</option>
+                  <option>Planning approved</option>
+                  <option>Not needed</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-msg">Tell us about the job</label>
+              <textarea id="f-msg" name="message" aria-describedby="h-msg e-msg"></textarea>
+              <span class="hint" id="h-msg">For example: a single-storey rear extension, about 4m by 5m, with brickwork to match the house.</span>
+              <span class="err" id="e-msg" aria-live="polite"></span>
+            </div>
+          </fieldset>
+
+          <div>
+            <button class="btn btn-green" type="submit">Prepare my enquiry</button>
+            <p class="hint" style="margin-top:.75rem">You'll send it from your own email or WhatsApp. Nothing is stored on this site.</p>
+          </div>
+        </form>
+
+        <div id="ready" class="ready" hidden tabindex="-1" aria-labelledby="ready-title">
+          <h2 id="ready-title">Your enquiry is ready to send</h2>
+          <p>Choose how to send it. If neither option opens, copy it and send it to <strong>mckennabuildersandsonsltd@gmail.com</strong> or <strong>07860 343567</strong>.</p>
+          <pre id="ready-text"></pre>
+          <div class="actions">
+            <a class="btn btn-green" id="mail-link" href="#contact">Send by email</a>
+            <a class="btn btn-green" id="wa-link" href="#contact" target="_blank" rel="noopener">Send by WhatsApp</a>
+            <button class="btn btn-plain" type="button" id="copy-enq">Copy enquiry</button>
+            <button class="btn btn-plain" type="button" id="edit-enq">Edit enquiry</button>
+          </div>
+          <p class="status" id="ready-status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <aside class="side" aria-labelledby="side-title">
+        <h2 id="side-title">Rather talk?</h2>
+        <p class="note" style="margin-top:0">Give us a call. If we're on site, leave a message and we'll ring you back.</p>
+        <dl>
+          <dt>Phone</dt><dd><a href="tel:+447860343567">07860 343567</a></dd>
+          <dt>Email</dt><dd><a href="mailto:mckennabuildersandsonsltd@gmail.com">mckennabuilders&#8203;andsonsltd@gmail.com</a></dd>
+          <dt>Facebook</dt><dd><a href="https://www.facebook.com/p/McKenna-Builders-Sons-Ltd-100057448479010/" target="_blank" rel="noopener">McKenna Builders &amp; Sons Ltd</a></dd>
+          <dt>Instagram</dt><dd><a href="https://www.instagram.com/mckennabuildersandsons/" target="_blank" rel="noopener">@mckennabuildersandsons</a></dd>
+          <dt>Based in</dt><dd>Rayleigh, Essex</dd>
+        </dl>
+        <div data-map style="margin-top:1.5rem"></div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fbrand"><img src="img/crest.webp" alt="" width="390" height="480"><div><b>McKenna Builders &amp; Sons Ltd</b>Rayleigh, Essex. Est. 1985.</div></div>
+      <p style="max-width:36ch">Family-run builders. Ornamental brickwork and stonework specialists, covering all areas of construction across south east Essex.</p>
+    </div>
+    <div>
+      <h3>Pages</h3>
+      <ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Get a free quote</a></li></ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul><li><a href="tel:+447860343567">07860 343567</a></li><li><a href="mailto:mckennabuildersandsonsltd@gmail.com">Email us</a></li><li><a href="https://www.facebook.com/p/McKenna-Builders-Sons-Ltd-100057448479010/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/mckennabuildersandsons/" target="_blank" rel="noopener">Instagram</a></li></ul>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> McKenna Builders &amp; Sons Ltd. Registered in England and Wales, company no. 11654416.</span><a href="#home" data-top>Back to top</a></div>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a href="tel:+447860343567"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Call us</a>
+  <a href="#contact">Free quote</a>
+</nav>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <div class="lb-top">
+    <span class="lb-count" id="lb-count"></span>
+    <button class="lb-btn" id="lb-close" aria-label="Close photo viewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <img id="lb-img" alt="">
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <p class="lb-cap" id="lb-cap"></p>
+</div>
+
+<div id="wall" aria-hidden="true"><div class="mortar"></div></div>
+
+<template id="tpl-cta">
+  <div class="wrap">
+    <img src="img/crest.webp" alt="" width="390" height="480">
+    <div><h2>Planning a project?</h2><p>Tell us what you have in mind. Quotes are free and there's no obligation.</p></div>
+    <div class="actions"><a class="btn btn-gold" href="#contact">Get a free quote</a><a class="btn btn-line" href="tel:+447860343567">07860 343567</a></div>
+  </div>
+</template>
+
+<template id="tpl-map">
+  <svg class="map" viewBox="0 0 420 300" role="img" aria-label="Map of south east Essex showing Rayleigh at the centre of the area we cover, from Wickford to Southend-on-Sea">
+    <rect width="420" height="300" fill="#f2f2ec"/>
+    <path d="M0 252 C70 240 120 264 190 254 S320 236 420 246 L420 300 L0 300Z" fill="#cfdadb"/>
+    <path d="M330 300 C340 280 372 270 420 268 L420 300Z" fill="#c3d1d2"/>
+    <text x="24" y="285" font-family="Archivo,sans-serif" font-size="12" fill="#55605a">Thames Estuary</text>
+    <circle cx="185" cy="140" r="122" fill="rgba(44,106,46,.07)" stroke="#2c6a2e" stroke-width="2" stroke-dasharray="6 6"/>
+    <g font-family="Archivo,sans-serif" font-size="13" fill="#18221a">
+      <circle cx="110" cy="92" r="4"/><text x="52" y="96">Wickford</text>
+      <circle cx="232" cy="112" r="4"/><text x="240" y="108">Hockley</text>
+      <circle cx="190" cy="74" r="4"/><text x="198" y="70">Hullbridge</text>
+      <circle cx="284" cy="134" r="4"/><text x="292" y="138">Rochford</text>
+      <circle cx="132" cy="196" r="4"/><text x="76" y="214">Benfleet</text>
+      <circle cx="150" cy="238" r="4"/><text x="160" y="242">Canvey Island</text>
+      <circle cx="236" cy="206" r="4"/><text x="244" y="222">Leigh-on-Sea</text>
+      <circle cx="316" cy="196" r="4"/><text x="324" y="200">Southend</text>
+      <circle cx="185" cy="140" r="10" fill="#c9222c" stroke="#fff" stroke-width="3"/><text x="200" y="146" font-weight="800" font-size="16">Rayleigh</text>
+    </g>
+  </svg>
+</template>
+
+<script>
+(function(){
+'use strict';
+/* ---------------- realistic brick textures (generated once, in the browser) ---------------- */
+var BRICK=(function(){
+  function rng(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function noise(gw,gh,r){var g=[];for(var i=0;i<(gw+1)*(gh+1);i++)g.push(r());
+    return function(u,v){var x=u*gw,y=v*gh,x0=Math.min(gw-1,x|0),y0=Math.min(gh-1,y|0),fx=x-x0,fy=y-y0;fx=fx*fx*(3-2*fx);fy=fy*fy*(3-2*fy);
+      var a=g[y0*(gw+1)+x0],b=g[y0*(gw+1)+x0+1],c=g[(y0+1)*(gw+1)+x0],d=g[(y0+1)*(gw+1)+x0+1];return a+(b-a)*fx+(c-a)*fy+(a-b-c+d)*fx*fy}}
+  // Essex multi-red stock bricks: a mix of reds, a few darker kiln-burnt and a few lighter
+  var BASE=[[146,60,42],[154,66,47],[134,52,38],[160,78,56],[122,48,36],[142,62,45],[156,84,62],[108,44,34],[150,72,54],[92,42,36],[164,92,68],[138,56,40]];
+  function cv(w,h){var c=document.createElement('canvas');c.width=w;c.height=h;return c}
+  function brick(W,H,seed){
+    var r=rng(seed*7919+13),base=BASE[Math.floor(r()*BASE.length)];
+    var c=cv(W,H),x=c.getContext('2d'),id=x.createImageData(W,H),p=id.data;
+    var n1=noise(5,2,r),n2=noise(22,7,r),n3=noise(60,18,r),st=noise(1,Math.max(4,H/3|0),r);
+    var burnEnd=r()<.5?0:1,burn=r()<.45?r()*.55:0,e=Math.max(2,Math.round(Math.min(W,H)*.07)),tint=(r()-.5)*.12;
+    for(var y=0;y<H;y++)for(var X=0;X<W;X++){
+      var u=X/W,v=y/H,i=(y*W+X)*4,q=r();
+      var l=1+(n1(u,v)-.5)*.2+(n2(u,v)-.5)*.1+(n3(u,v)-.5)*.05+(st(u,v)-.5)*.05+(q-.5)*.09;
+      l*=1-burn*Math.max(0,1-Math.abs(u-burnEnd)*2.4);
+      var d=Math.min(X,y,W-1-X,H-1-y);
+      if(d<e){l*=.86+.14*(d/e)}
+      if(y<e)l*=1.05; if(H-1-y<e*1.3)l*=.86; if(W-1-X<e)l*=.92;
+      var R=base[0]*l,G=base[1]*l*(1+tint),B=base[2]*l;
+      var s=r();
+      if(s<.005){R*=.62;G*=.62;B*=.62}                       // dark specks
+      else if(s<.009){R=R*.55+196*.45;G=G*.55+178*.45;B=B*.55+148*.45} // sand / lime specks
+      p[i]=R;p[i+1]=G;p[i+2]=B;p[i+3]=255;
+    }
+    x.putImageData(id,0,0);
+    // worn arrises: knock out a few small chips along the edges
+    x.globalCompositeOperation='destination-out';
+    var chips=Math.floor(r()*3);
+    for(var k=0;k<chips;k++){var side=Math.floor(r()*4),cx=side<2?r()*W:(side===2?0:W),cy=side>=2?r()*H:(side===0?0:H),rad=1+r()*Math.min(W,H)*.045;
+      x.beginPath();x.ellipse(cx,cy,rad*1.6,rad,0,0,Math.PI*2);x.fill()}
+    var rc=Math.max(1,Math.min(W,H)*.04);
+    [[0,0],[W,0],[0,H],[W,H]].forEach(function(pt){x.beginPath();x.arc(pt[0],pt[1],rc,0,Math.PI*2);x.fill()});
+    x.globalCompositeOperation='source-over';
+    return c;
+  }
+  function mortar(W,H,seed){
+    var r=rng(seed),c=cv(W,H),x=c.getContext('2d'),id=x.createImageData(W,H),p=id.data,n=noise(16,16,r);
+    for(var i=0;i<W*H;i++){var X=i%W,Y=(i/W)|0,l=.92+(n(X/W,Y/H)-.5)*.14+(r()-.5)*.22,s=r();
+      var R=170*l,G=162*l,B=146*l; if(s<.03){R*=.72;G*=.72;B*=.72}else if(s<.05){R+=18;G+=16;B+=12}
+      p[i*4]=R;p[i*4+1]=G;p[i*4+2]=B;p[i*4+3]=255}
+    x.putImageData(id,0,0);return c;
+  }
+  // stretcher-bond wall tile that repeats seamlessly
+  function wall(bw,bh,j,cols,rows,seed){
+    var W=cols*(bw+j),H=rows*(bh+j),c=cv(W,H),x=c.getContext('2d');
+    x.drawImage(mortar(W,H,seed),0,0);
+    var k=0;
+    for(var r=0;r<rows;r++){var off=(r%2)?(bw+j)/2:0,y=r*(bh+j)+j/2;
+      for(var i=-1;i<=cols;i++){var bx=off+i*(bw+j)+j/2; if(bx>W||bx+bw<0)continue;
+        var b=brick(bw,bh,seed+(r*31+((i+cols)%cols))*17);
+        x.save();x.shadowColor='rgba(0,0,0,.45)';x.shadowBlur=j*.6;x.shadowOffsetY=j*.3;x.drawImage(b,bx,y);x.restore();
+        if(bx<0)x.drawImage(b,bx+W,y); if(bx+bw>W){x.save();x.shadowColor='rgba(0,0,0,.45)';x.shadowBlur=j*.6;x.shadowOffsetY=j*.3;x.drawImage(b,bx-W,y);x.restore()}
+      }}
+    return c;
+  }
+  // soldier course: bricks stood on end
+  function soldier(bw,bh,j,count,seed){
+    var W=count*(bw+j),H=bh+j*2,c=cv(W,H),x=c.getContext('2d');
+    x.drawImage(mortar(W,H,seed),0,0);
+    for(var i=0;i<count;i++){var b=brick(bh,bw,seed+i*23),t=cv(bw,bh),tx=t.getContext('2d');
+      tx.translate(bw,0);tx.rotate(Math.PI/2);tx.drawImage(b,0,0);
+      x.save();x.shadowColor='rgba(0,0,0,.45)';x.shadowBlur=j*.6;x.shadowOffsetY=j*.3;x.drawImage(t,i*(bw+j)+j/2,j);x.restore()}
+    return c;
+  }
+  var cache={},mortarURL=null;
+  return {
+    init:function(){
+      try{
+        var dpr=Math.min(2,window.devicePixelRatio||1);
+        var w=wall(Math.round(108*dpr),Math.round(34*dpr),Math.round(8*dpr),5,6,101);
+        var root=document.documentElement.style;
+        root.setProperty('--wall','url('+w.toDataURL('image/jpeg',.86)+')');
+        root.setProperty('--wall-size',(w.width/dpr)+'px '+(w.height/dpr)+'px');
+        var s=soldier(Math.round(18*dpr),Math.round(34*dpr),Math.round(4*dpr),14,202);
+        root.setProperty('--soldier','url('+s.toDataURL('image/jpeg',.86)+')');
+        root.setProperty('--soldier-size',(s.width/dpr)+'px '+(s.height/dpr)+'px');
+        mortarURL=mortar(256,256,303).toDataURL('image/jpeg',.85);
+        root.setProperty('--mortar-tex','url('+mortarURL+')');
+      }catch(e){}
+    },
+    set:function(bw,bh){
+      var key=bw+'x'+bh; if(cache[key])return cache[key];
+      var dpr=Math.min(2,window.devicePixelRatio||1),out=[];
+      for(var i=0;i<14;i++)out.push(brick(Math.round(bw*dpr),Math.round(bh*dpr),900+i*41).toDataURL('image/png'));
+      return cache[key]=out;
+    }
+  };
+})();
+BRICK.init();
+setTimeout(function(){try{var sm=innerWidth<640;BRICK.set(sm?78:128,sm?28:44)}catch(e){}},600);
+var EMAIL='mckennabuildersandsonsltd@gmail.com', WA='447860343567';
+var reduce=false; try{reduce=matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+try{document.getElementById('yr').textContent=new Date().getFullYear()}catch(e){}
+
+/* ---------------- content ---------------- */
+var ICON={
+  brick:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="8" width="40" height="32" rx="1"/><path d="M4 18.7h40M4 29.3h40M18 8v10.7M32 8v10.7M11 18.7v10.6M25 18.7v10.6M39 18.7v10.6M18 29.3V40M32 29.3V40"/></svg>',
+  stone:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 8h18v14H4zM26 8h18v9H26zM26 21h8v12h-8zM38 21h6v19h-6zM4 26h18v14H4zM26 37h8v3h-8z"/></svg>',
+  house:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 22L24 7l18 15M10 19v22h28V19"/><path d="M20 41V29h8v12"/></svg>',
+  ext:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 22L18 10l14 12M8 19v21h20"/><path d="M28 26h16v14H28z" stroke-dasharray="3 3"/></svg>',
+  reno:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M10 38l18-18M26 14l8 8 6-6-8-8zM8 40l4-4"/><path d="M6 8h12M6 14h8"/></svg>',
+  land:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 40h40M10 40V28M10 28c-5 0-6-8 0-10 6 2 5 10 0 10zM30 40V22M30 22c-8 0-9-13 0-15 9 2 8 15 0 15z"/><path d="M18 40c2-5 6-6 8-6"/></svg>'
+};
+var SERVICES=[
+  {id:'brickwork',name:'Ornamental brickwork',icon:'brick',sw:'sw-orn',short:'Decorative bonds, feature panels, arches and detailing, laid by hand.',
+   long:'Our speciality. Decorative brickwork adds character that lasts for generations, whether it’s a new build, an extension that needs to match, or a feature that makes a house stand out.',
+   list:['Decorative bonds and feature panels','Arches, corbelling and string courses','Brick matching for extensions','Chimneys, piers and garden walls']},
+  {id:'stonework',name:'Stonework',icon:'stone',sw:'sw-stone',short:'Natural and reconstituted stone for facades, walls and features.',
+   long:'The other half of our speciality. Stone gives a property weight and quality, from a full facade to sills, steps and boundary walls.',
+   list:['Stone facades and cladding','Sills, heads and quoins','Boundary and retaining walls','Steps and garden features']},
+  {id:'newbuild',name:'New builds',icon:'house',sw:'sw-photo',img:'img/exterior.webp',short:'Complete properties, from bare ground to finished home.',
+   long:'We build complete properties from scratch, like the holiday let in our gallery: groundwork, structure, roof, finishes and the garden around it.',
+   list:['Houses, annexes and holiday lets','Groundwork and foundations','Structure, roofing and cladding','Fit-out and finishing']},
+  {id:'extensions',name:'Extensions',icon:'ext',sw:'sw-herring',short:'More space, built to match your home.',
+   long:'Single and two-storey extensions that look like they’ve always been there, with brickwork matched to your house.',
+   list:['Rear and side extensions','Two-storey extensions','Brickwork to match the existing house','Knock-throughs and open-plan layouts']},
+  {id:'renovations',name:'Renovations',icon:'reno',sw:'sw-green',short:'Full transformations of existing homes.',
+   long:'From updating a tired property to rebuilding it completely. One customer’s small bungalow became a five-bedroom, four-bathroom family home.',
+   list:['Whole-house renovations','Remodelling and reconfiguration','Kitchens and bathrooms','Structural alterations']},
+  {id:'landscaping',name:'Landscaping',icon:'land',sw:'sw-lawn',short:'Gardens, patios, walls and the space around your home.',
+   long:'A build isn’t finished until the outside is too. We lay out gardens, patios and decking, and build the walls and steps that frame them.',
+   list:['Patios, paths and decking','Garden and boundary walls','Raised beds and planting areas','Steps and levelling']}
+];
+/* ---------------- render shared blocks ---------------- */
+document.querySelectorAll('[data-cta]').forEach(function(s){ s.appendChild(document.getElementById('tpl-cta').content.cloneNode(true)); });
+document.querySelectorAll('[data-map]').forEach(function(s){ s.appendChild(document.getElementById('tpl-map').content.cloneNode(true)); });
+
+document.getElementById('svc-summary').innerHTML=SERVICES.map(function(s){
+  return '<div class="svc"><div class="ic" aria-hidden="true">'+ICON[s.icon]+'</div><h3>'+s.name+'</h3><p>'+s.short+'</p><a class="textlink" href="#services">More about '+s.name.toLowerCase()+'</a></div>';
+}).join('');
+document.getElementById('svc-detail').innerHTML=SERVICES.map(function(s){
+  var sw = s.img ? '<div class="swatch sw-photo" style="background-image:url('+s.img+')" aria-hidden="true"></div>' : '<div class="swatch '+s.sw+'" aria-hidden="true"></div>';
+  return '<article class="sd" id="svc-'+s.id+'">'+sw+'<div class="body"><h2 style="font-size:1.75rem;margin-bottom:.6rem">'+s.name+'</h2><p>'+s.long+'</p><ul>'+s.list.map(function(l){return '<li>'+l+'</li>'}).join('')+'</ul><a class="btn btn-green" href="#contact" data-service="'+s.name+'">Ask about '+s.name.toLowerCase()+'</a></div></article>';
+}).join('');
+document.getElementById('type-chips').innerHTML=SERVICES.map(function(s){return '<label><input type="checkbox" name="type" value="'+s.name+'"> '+s.name+'</label>'}).join('')+'<label><input type="checkbox" name="type" value="Something else"> Something else</label>';
+
+var PROJECTS=[{"id":"bungalow","type":"ext","title":"Bungalow extension and open-plan kitchen","where":"South east Essex","blurb":"We took down an old conservatory and rear extension and built a new single-storey extension. The work covered the footings, a block and beam floor, steels, a flat roof with a lantern and an internal brick feature wall. We then reworked the inside into an open-plan kitchen, dining and living space.","cover":"bg-open-plan","photos":[{"n":"bg-before-rear","cap":"Before: the rear of the bungalow and its old conservatory","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-before-digger","cap":"Day one, with the digger on site","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-before-side","cap":"Before: the old rendered rear extension","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-before-kitchen","cap":"Before: the old kitchen","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-before-kitchen-2","cap":"Before: the old kitchen, another angle","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-before-hall","cap":"Before: the old hallway","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-before-lounge","cap":"Before: the lounge opening onto the conservatory","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-demo","cap":"Taking down the old extension and conservatory","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-demo-dusk","cap":"Demolition finished at dusk","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-cleared","cap":"Site cleared, ready for footings","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-trench","cap":"Digging the foundation trench","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-trench-2","cap":"Foundations dug down to firm ground","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-trench-3","cap":"Foundation trench","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-footings","cap":"Bringing the footings up to floor level","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-floor","cap":"Block and beam floor going in","w":799,"h":624,"tw":600,"th":469},{"n":"bg-floor-2","cap":"Beams laid over the membrane","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-floor-3","cap":"Floor beams across the footprint","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-floor-4","cap":"Floor half laid","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-floor-5","cap":"Beams in place and steel post set","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-floor-done","cap":"Floor complete, blocks stacked for the walls","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-blockwork","cap":"Blockwork walls rising","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-shell","cap":"The shell taking shape","w":800,"h":625,"tw":600,"th":469},{"n":"bg-steels","cap":"Steels in over the new openings","w":1024,"h":768,"tw":600,"th":450},{"n":"bg-steels-brick","cap":"Brickwork going up under the steels","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-facing-brick","cap":"Facing brick laid against the insulation","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-joists","cap":"Roof joists going in between the steels","w":798,"h":621,"tw":600,"th":467},{"n":"bg-joists-2","cap":"Fitting the roof joists","w":800,"h":625,"tw":600,"th":469},{"n":"bg-roofdeck","cap":"Roof decked and the lantern opening framed","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-roofdeck-2","cap":"Flat roof deck and lantern upstand","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-roofdeck-3","cap":"Ready for the roof lantern","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-strip","cap":"Inside, stripped back","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-stud","cap":"New stud walls for the new layout","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-lantern-in","cap":"The roof lantern in, seen through the new opening","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-plastered","cap":"Plastered and insulated, with the bi-folds fitted","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-screed","cap":"Floor screeded, feature wall protected","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-brickwall","cap":"The internal brick feature wall","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-lantern-progress","cap":"Lantern, feature wall and bi-folds","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-hall-plaster","cap":"Hallway replastered","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-island-fit","cap":"Kitchen island going in","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-mantel","cap":"Oak mantel over the range","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-open-plan","cap":"The finished open-plan kitchen, dining and living space","w":1400,"h":1050,"tw":600,"th":450},{"n":"bg-kitchen","cap":"The finished kitchen","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-island","cap":"Kitchen island under the roof lantern","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-dining","cap":"Dining beside the brick feature wall","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-dining-2","cap":"Light pouring in through the lantern","w":720,"h":960,"tw":450,"th":600},{"n":"bg-lantern","cap":"The roof lantern from below","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-diner","cap":"Dining table looking through to the kitchen","w":720,"h":960,"tw":450,"th":600},{"n":"bg-lounge","cap":"Living area with the brick feature wall","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-larder","cap":"Larder units and fridge freezer","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-worktop","cap":"Quartz worktop with drainer grooves","w":787,"h":1400,"tw":337,"th":600},{"n":"bg-sink","cap":"Belfast sink under the window","w":787,"h":1400,"tw":337,"th":600},{"n":"bg-hall","cap":"Hallway, panelled and papered","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-bedroom","cap":"A finished bedroom","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-exterior","cap":"The finished rear of the bungalow","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-dusk","cap":"The extension lit up at dusk","w":1050,"h":1400,"tw":450,"th":600},{"n":"bg-exterior-2","cap":"Rendered and finished","w":1050,"h":1400,"tw":450,"th":600}],"picks":["bg-open-plan","bg-dining","bg-exterior"]},{"id":"detached","type":"ext","title":"Rear extension, kitchen and patio","where":"Detached family home","blurb":"A full-width rear extension with bi-fold doors and a roof lantern. We did the footings, block and beam floor, steels to open up the back of the house, the roof, insulation, plasterboard and render, then a slate patio with curved brick walls.","cover":"dt-after","photos":[{"n":"dt-before","cap":"Before: digger and dumper arriving","w":540,"h":718,"tw":451,"th":600},{"n":"dt-floor","cap":"Floor beams on the new footings","w":540,"h":720,"tw":450,"th":600},{"n":"dt-floor-2","cap":"Block and beam floor","w":540,"h":720,"tw":450,"th":600},{"n":"dt-floor-3","cap":"Floor complete","w":540,"h":720,"tw":450,"th":600},{"n":"dt-blocks","cap":"Blockwork going up","w":540,"h":406,"tw":540,"th":406},{"n":"dt-blocks-2","cap":"Laying the blockwork","w":540,"h":720,"tw":450,"th":600},{"n":"dt-scaffold","cap":"Scaffold up, walls at full height","w":540,"h":406,"tw":540,"th":406},{"n":"dt-opened","cap":"Back of the house opened up on new steels","w":540,"h":720,"tw":450,"th":600},{"n":"dt-steels","cap":"Lifting the steels into place","w":540,"h":720,"tw":450,"th":600},{"n":"dt-roof","cap":"Roof joists and lantern frame","w":540,"h":720,"tw":450,"th":600},{"n":"dt-shell","cap":"Shell complete, openings formed","w":540,"h":720,"tw":450,"th":600},{"n":"dt-dusk","cap":"Working into the evening","w":540,"h":405,"tw":540,"th":405},{"n":"dt-insulation","cap":"Floor and walls insulated","w":540,"h":720,"tw":450,"th":600},{"n":"dt-boarding","cap":"Plasterboarding the ceiling","w":540,"h":720,"tw":450,"th":600},{"n":"dt-boarded","cap":"Boarded and taped, ready for plaster","w":540,"h":720,"tw":450,"th":600},{"n":"dt-rendered","cap":"Rendered, with the garden next","w":540,"h":406,"tw":540,"th":406},{"n":"dt-curved-wall","cap":"Curved brick wall with brick-on-edge coping","w":540,"h":406,"tw":540,"th":406},{"n":"dt-patio","cap":"Slate patio laid","w":540,"h":406,"tw":540,"th":406},{"n":"dt-patio-wet","cap":"Patio washed down","w":540,"h":405,"tw":540,"th":405},{"n":"dt-finished","cap":"Finished with bi-folds and patio","w":540,"h":405,"tw":540,"th":405},{"n":"dt-finished-2","cap":"Finished extension, lawn to follow","w":540,"h":405,"tw":540,"th":405},{"n":"dt-after","cap":"The finished extension with roof lantern","w":540,"h":354,"tw":540,"th":354},{"n":"dt-kitchen","cap":"The new kitchen","w":540,"h":405,"tw":540,"th":405},{"n":"dt-island","cap":"Island with stone top and wine cooler","w":540,"h":720,"tw":450,"th":600},{"n":"dt-living","cap":"Open-plan living with bi-folds to the garden","w":540,"h":405,"tw":540,"th":405},{"n":"dt-living-2","cap":"Kitchen and living space under the lantern","w":540,"h":405,"tw":540,"th":405}],"picks":["dt-after","dt-island","dt-living"]},{"id":"hanningfield","type":"build","title":"New roof, first floor and chimney","where":"Hanningfield","blurb":"A new roof structure and first floor built under a temporary scaffold roof, finished in handmade clay plain tiles, with the chimney rebuilt in reclaimed stock brick.","quote":"If it’s possible for a roof to be a thing of beauty then this is certainly in the number one spot!","cover":"ig-clay-roof","photos":[{"n":"hf-trusses","cap":"New roof structure going up","w":1400,"h":1050,"tw":600,"th":450},{"n":"hf-trusses-2","cap":"Trusses and gable from above","w":1400,"h":1050,"tw":600,"th":450},{"n":"hf-trusses-3","cap":"Main roof and dormer framed","w":1400,"h":1050,"tw":600,"th":450},{"n":"hf-framing","cap":"Roof framing in progress","w":1400,"h":1050,"tw":600,"th":450},{"n":"hf-dormer","cap":"Dormer cheeks framed","w":1400,"h":1050,"tw":600,"th":450},{"n":"hf-inside","cap":"Inside the new roof","w":1400,"h":1050,"tw":600,"th":450},{"n":"hf-first-floor","cap":"First-floor walls framed under the temporary roof","w":1400,"h":1050,"tw":600,"th":450},{"n":"hf-first-floor-2","cap":"The new first floor taking shape","w":1400,"h":1050,"tw":600,"th":450},{"n":"ig-clay-roof","cap":"Finished in handmade clay plain tiles","w":708,"h":821,"tw":517,"th":600},{"n":"ig-chimney","cap":"Chimney rebuilt in reclaimed stock brick","w":708,"h":821,"tw":517,"th":600}],"picks":["ig-clay-roof","hf-trusses","ig-chimney"]},{"id":"dormer","bpos":"center 48%","apos":"center 42%","type":"build","title":"Chalet bungalow rebuilt with dormers","where":"South east Essex","blurb":"A tired chalet bungalow transformed with a new slate roof, two front dormers, roof windows and an oak-framed porch.","cover":"dm-after","before":"dm-before","after":"dm-after","photos":[{"n":"dm-before","cap":"Before: the front of the bungalow","w":720,"h":960,"tw":450,"th":600},{"n":"dm-before-rear","cap":"Before: the rear","w":720,"h":960,"tw":450,"th":600},{"n":"dm-after","cap":"After: new slate roof, dormers and oak porch","w":720,"h":960,"tw":450,"th":600},{"n":"dm-hoarding","cap":"Nearly there, behind our site hoarding","w":720,"h":960,"tw":450,"th":600}],"picks":["dm-after","dm-before"]},{"id":"chalet","type":"build","title":"Chalet bungalow to two-storey home","where":"South east Essex","blurb":"A chalet bungalow rebuilt as a full two-storey family home with a gabled oak porch.","cover":"ch-after","before":"ch-before","after":"ch-after","photos":[{"n":"ch-before","cap":"Before: the original chalet bungalow","w":1170,"h":843,"tw":600,"th":432},{"n":"ch-after","cap":"After: a two-storey family home","w":1400,"h":1027,"tw":600,"th":440}],"picks":["ch-after","ch-before"]},{"id":"airbnb","type":"build","title":"New-build holiday let","where":"South east Essex","blurb":"A brand new property built from scratch for a client to run on Airbnb: structure, roof, cladding, glazing, decking and a full fit-out.","cover":"exterior","photos":[{"n":"exterior","cap":"The finished holiday let, with decking and planted borders","w":800,"h":600,"tw":600,"th":450},{"n":"build-shell","cap":"The shell goes up: roof on, cladding finished","w":1067,"h":626,"tw":600,"th":352},{"n":"build-side","cap":"Closing in the new build in an established garden","w":1067,"h":626,"tw":600,"th":352},{"n":"build-decking","cap":"Glazing fitted and the decking frame laid","w":1067,"h":626,"tw":600,"th":352},{"n":"living-room","cap":"Open-plan living room with garden doors","w":800,"h":906,"tw":530,"th":600},{"n":"living-kitchen","cap":"Kitchenette and living space","w":800,"h":600,"tw":600,"th":450},{"n":"kitchen","cap":"Fitted kitchen","w":1067,"h":943,"tw":600,"th":530},{"n":"kitchen-door","cap":"Kitchen with oak door through to the hall","w":1067,"h":941,"tw":600,"th":529},{"n":"bathroom","cap":"Bathroom with marble-effect wall tiles","w":1050,"h":1400,"tw":450,"th":600},{"n":"bedroom","cap":"Main bedroom","w":1067,"h":941,"tw":600,"th":529},{"n":"bedroom-ensuite","cap":"Bedroom with ensuite and oak doors","w":1067,"h":943,"tw":600,"th":530},{"n":"hallway","cap":"Hallway with a full-height garden window","w":800,"h":1066,"tw":450,"th":600}],"picks":["exterior","living-room","build-shell"]},{"id":"garden","type":"land","title":"Garden, patio and brick planters","where":"The same bungalow, the following year","blurb":"Finishing off the extension we built the year before. We built red brick walls and piers with stone copings, laid a neutral porcelain patio, added brick planters, a pond and a shed base, and prepared the lawn.","cover":"gd-wide","photos":[{"n":"gd-start","cap":"Setting out the brick piers","w":1400,"h":1050,"tw":600,"th":450},{"n":"gd-walls","cap":"Planter walls going up","w":1400,"h":1050,"tw":600,"th":450},{"n":"gd-laying","cap":"Laying the porcelain by the bi-folds","w":1050,"h":1400,"tw":450,"th":600},{"n":"gd-planters","cap":"Brick planters and the new patio","w":1400,"h":1050,"tw":600,"th":450},{"n":"gd-lawn-prep","cap":"Patio finished and the lawn prepared","w":1050,"h":1400,"tw":450,"th":600},{"n":"gd-shed-base","cap":"A new shed base","w":1050,"h":1400,"tw":450,"th":600},{"n":"gd-pond","cap":"The new pond","w":1050,"h":1400,"tw":450,"th":600},{"n":"gd-steps","cap":"Brick piers and steps with stone copings","w":1400,"h":1052,"tw":600,"th":451},{"n":"gd-planters-2","cap":"Planters capped and patio pointed","w":1400,"h":1050,"tw":600,"th":450},{"n":"gd-wet","cap":"Patio washed down","w":1200,"h":900,"tw":600,"th":450},{"n":"gd-patio","cap":"The finished patio","w":1400,"h":1052,"tw":600,"th":451},{"n":"gd-table","cap":"Ready for summer","w":1050,"h":1400,"tw":450,"th":600},{"n":"gd-pier","cap":"Pier and planter detail","w":1400,"h":1052,"tw":600,"th":451},{"n":"gd-wide","cap":"The finished garden and extension","w":960,"h":720,"tw":600,"th":450}],"picks":["gd-wide","gd-steps","gd-patio"]},{"id":"slate","type":"land","title":"Slate patio and garden walls","where":"South east Essex","blurb":"A large slate patio with red brick retaining walls, piers and copings, plus a new soakaway.","cover":"sl-final","photos":[{"n":"sl-start","cap":"Building the piers and walls","w":1050,"h":1400,"tw":450,"th":600},{"n":"sl-soakaway","cap":"Installing the soakaway drain","w":1109,"h":1167,"tw":570,"th":600},{"n":"sl-wall","cap":"Retaining wall going up","w":1050,"h":1400,"tw":450,"th":600},{"n":"sl-patio","cap":"Slate patio laid","w":960,"h":720,"tw":600,"th":450},{"n":"sl-wet","cap":"Patio washed down","w":1400,"h":1050,"tw":600,"th":450},{"n":"sl-wet-2","cap":"Washed down, another view","w":1400,"h":1050,"tw":600,"th":450},{"n":"sl-final","cap":"The finished patio and garden walls","w":960,"h":720,"tw":600,"th":450}],"picks":["sl-final","sl-wall","sl-wet"]},{"id":"greenhouse","type":"land","title":"Cottage-garden walls and greenhouse base","where":"South east Essex","blurb":"Low red brick walls and piers with stone copings and built-in lights, raised beds, and a brick base for a greenhouse.","cover":"gh-walls","photos":[{"n":"gh-walls","cap":"Brick walls and piers with stone copings and built-in lights","w":1392,"h":1392,"tw":600,"th":600},{"n":"ig-greenhouse-garden","cap":"Walls, raised beds and the greenhouse base","w":734,"h":734,"tw":600,"th":600}],"picks":["gh-walls","ig-greenhouse-garden"]},{"id":"portico","type":"stone","title":"Stone portico","where":"South east Essex","blurb":"A classical stone portico with columns, an entablature and a black-and-white tiled step.","cover":"pt-portico","photos":[{"n":"pt-portico","cap":"The finished stone portico","w":539,"h":720,"tw":449,"th":600},{"n":"pt-top","cap":"The portico top, before the scaffold came down","w":750,"h":562,"tw":600,"th":450}],"picks":["pt-portico","pt-top"]},{"id":"rearext","type":"ext","title":"Rear extension with bi-folds","where":"South east Essex","blurb":"The back of the house propped and opened up for a wide rear extension with bi-fold doors, a roof lantern and a slate patio.","cover":"re-after","photos":[{"n":"re-props","cap":"Rear wall propped ready for the new opening","w":720,"h":960,"tw":450,"th":600},{"n":"re-opening","cap":"New opening formed on props","w":720,"h":960,"tw":450,"th":600},{"n":"re-bifolds","cap":"Finished, with the bi-folds open","w":960,"h":720,"tw":600,"th":450},{"n":"re-after","cap":"The finished extension and roof lantern","w":960,"h":720,"tw":600,"th":450},{"n":"re-patio","cap":"Slate patio outside the bi-folds","w":720,"h":960,"tw":450,"th":600}],"picks":["re-after","re-props","re-bifolds"]},{"id":"semi","type":"ext","title":"Rear extension and patio","where":"South east Essex","blurb":"A rear extension with full-width bi-folds, followed by a new patio with brick-edged steps.","cover":"sm-bifolds","photos":[{"n":"sm-before","cap":"Bi-folds in, before the patio","w":1400,"h":1050,"tw":600,"th":450},{"n":"sm-patio","cap":"New patio and planting","w":1400,"h":1050,"tw":600,"th":450},{"n":"sm-bifolds","cap":"Bi-folds open onto the new patio","w":960,"h":720,"tw":600,"th":450}],"picks":["sm-bifolds","sm-patio","sm-before"]},{"id":"hockley","type":"ext","title":"Rear extension with roof lantern","where":"Hockley","blurb":"A single-storey rear extension with black bi-fold doors, a roof lantern and brick-edged steps, with a large patio also laid by us.","cover":"ig-hockley-extension","photos":[{"n":"ig-hockley-extension","cap":"Rear extension with bi-folds, roof lantern and brick steps","w":734,"h":734,"tw":600,"th":600},{"n":"ig-skylight","cap":"Roof lantern bringing light into the extension","w":734,"h":651,"tw":600,"th":532}],"picks":["ig-hockley-extension","ig-skylight"]}];
+var PHOTOS=[],PROJ={},BYNAME={};
+PROJECTS.forEach(function(p){PROJ[p.id]=p;p.idx=[];p.photos.forEach(function(ph){var i=PHOTOS.length;PHOTOS.push({src:'img/'+ph.n+'.webp',t:'img/t/'+ph.n+'.webp',w:ph.w,h:ph.h,tw:ph.tw,th:ph.th,cap:ph.cap,alt:ph.cap,proj:p.id,type:p.type});BYNAME[ph.n]=i;p.idx.push(i)})});
+var TYPES=[{id:'all',name:'All work'},{id:'ext',name:'Extensions'},{id:'build',name:'New builds and rebuilds'},{id:'land',name:'Gardens and brickwork'},{id:'stone',name:'Stonework'}];
+function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+function thumbBtn(i,cls){var p=PHOTOS[i];return '<button class="'+(cls||'')+'" data-photo="'+i+'" aria-label="View larger: '+esc(p.cap)+'"><img src="'+p.t+'" alt="'+esc(p.alt)+'" width="'+p.tw+'" height="'+p.th+'" loading="lazy"></button>'}
+
+/* ---------- before / after sliders ---------- */
+function baHTML(p){var b=PHOTOS[BYNAME[p.before]],a=PHOTOS[BYNAME[p.after]];
+  return '<div class="ba" style="--pos:50%"><img class="ba-after" style="object-position:'+(p.apos||'center')+'" src="'+a.src+'" alt="After: '+esc(a.cap.replace(/^After: /,''))+'" loading="lazy"><div class="ba-before"><img style="object-position:'+(p.bpos||'center')+'" src="'+b.src+'" alt="Before: '+esc(b.cap.replace(/^Before: /,''))+'" loading="lazy"></div>'+
+  '<span class="ba-tag ba-tag-b" aria-hidden="true">Before</span><span class="ba-tag ba-tag-a" aria-hidden="true">After</span><span class="ba-handle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></span>'+
+  '<input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after: '+esc(p.title)+'"></div>'}
+document.addEventListener('input',function(e){if(e.target.classList.contains('ba-range'))e.target.closest('.ba').style.setProperty('--pos',e.target.value+'%')});
+
+/* ---------- home: featured work ---------- */
+var FEAT=[{n:'bg-open-plan',t:'Open-plan kitchen under a new roof lantern',w:'Bungalow extension',c:'f-wide'},{n:'gh-walls',t:'Brick walls and piers with stone copings',w:'Garden walls'},{n:'pt-portico',t:'A classical stone portico',w:'Stonework'},{n:'sl-final',t:'Slate patio and brick retaining walls',w:'Landscaping',c:'f-wide'}];
+document.getElementById('feat-ba').innerHTML=baHTML(PROJ.chalet)+'<p class="ba-cap"><b>'+PROJ.chalet.title+'</b>Drag the handle to compare</p>';
+document.getElementById('feat-tiles').innerHTML=FEAT.map(function(f){var i=BYNAME[f.n],p=PHOTOS[i];return '<button class="ftile '+(f.c||'')+'" data-photo="'+i+'" aria-label="View larger: '+esc(p.cap)+'"><img src="'+p.src+'" alt="'+esc(p.alt)+'" width="'+p.w+'" height="'+p.h+'" loading="lazy"><span class="fcap"><small>'+f.w+'</small>'+f.t+'</span></button>'}).join('');
+
+/* ---------- gallery: grouped by job ---------- */
+var filters=document.getElementById('filters'),gwrap=document.getElementById('grid-g'),activeType='all',SHOW=12;
+filters.innerHTML=TYPES.map(function(c){var n=c.id==='all'?PHOTOS.length:PHOTOS.filter(function(p){return p.type===c.id}).length;return '<button type="button" data-cat="'+c.id+'" aria-pressed="'+(c.id==='all')+'">'+c.name+'<span class="count">'+n+'</span></button>'}).join('');
+gwrap.innerHTML=PROJECTS.map(function(p){var more=p.idx.length-SHOW;
+  return '<section class="gproj" id="gp-'+p.id+'" data-type="'+p.type+'" aria-labelledby="gh-'+p.id+'"><header class="gp-head"><div><span class="where">'+esc(p.where)+'</span><h2 id="gh-'+p.id+'">'+esc(p.title)+'</h2></div><span class="gp-count">'+p.idx.length+' photo'+(p.idx.length>1?'s':'')+'</span></header><p class="gp-blurb">'+esc(p.blurb)+'</p>'+
+  '<div class="gp-grid">'+p.idx.map(function(i,k){return thumbBtn(i,k>=SHOW?'extra':'')}).join('')+'</div>'+
+  (more>0?'<button class="btn btn-plain gp-more" type="button" aria-expanded="false" data-more="'+p.id+'">Show all '+p.idx.length+' photos</button>':'')+'</section>'}).join('');
+gwrap.addEventListener('click',function(e){var b=e.target.closest('[data-more]');if(!b)return;var sec=b.closest('.gproj'),open=!sec.classList.contains('open');sec.classList.toggle('open',open);b.setAttribute('aria-expanded',String(open));b.textContent=open?'Show fewer photos':'Show all '+PROJ[b.dataset.more].idx.length+' photos';if(!open)sec.scrollIntoView({block:'start',behavior:reduce?'auto':'smooth'})});
+filters.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;activeType=b.dataset.cat;filters.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});gwrap.querySelectorAll('.gproj').forEach(function(s){s.hidden=!(activeType==='all'||s.dataset.type===activeType)})});
+
+/* ---------- projects page ---------- */
+document.getElementById('ba-list').innerHTML=['chalet','dormer'].map(function(id){var p=PROJ[id];return '<figure class="ba-fig">'+baHTML(p)+'<figcaption><b>'+esc(p.title)+'</b>'+esc(p.blurb)+'</figcaption></figure>'}).join('');
+document.getElementById('more-projects').innerHTML=PROJECTS.filter(function(p){return p.id!=='airbnb'}).map(function(p){
+  var idx=p.picks.map(function(n){return BYNAME[n]}).slice(0,3),cls=idx.length===2?'two':'';
+  return '<article class="pcard"><div class="pics '+cls+'">'+idx.map(function(i,k){var ph=PHOTOS[i];return '<button data-photo="'+i+'" aria-label="View larger: '+esc(ph.cap)+'"><img src="'+(k===0?ph.src:ph.t)+'" alt="'+esc(ph.alt)+'" loading="lazy"></button>'}).join('')+'</div>'+
+  '<div class="body"><span class="where">'+esc(p.where)+'</span><h3>'+esc(p.title)+'</h3><p>'+esc(p.blurb)+'</p>'+(p.quote?'<p class="quote-sm">“'+esc(p.quote)+'”</p>':'')+
+  '<div class="actions"><button class="btn btn-green" type="button" data-open-gallery="'+p.id+'">View '+(p.idx.length>1?'all '+p.idx.length+' photos':'photo')+'</button><a class="textlink" href="#gallery" data-goto="'+p.id+'">See in gallery</a></div></div></article>'}).join('');
+
+/* ---------------- lightbox ---------------- */
+var lb=document.getElementById('lb'), lbImg=document.getElementById('lb-img'), lbCap=document.getElementById('lb-cap'), lbCount=document.getElementById('lb-count');
+var seq=[], pos=0, lastFocus=null;
+function lbShow(){var p=PHOTOS[seq[pos]];lbImg.src=p.src;lbImg.alt=p.alt;lbCap.textContent=p.cap;lbCount.textContent=(pos+1)+' of '+seq.length;
+  [seq[pos+1],seq[pos-1]].forEach(function(i){if(i!=null){var im=new Image();im.src=PHOTOS[i].src}});}
+function lbOpen(list,i){seq=list;pos=Math.max(0,list.indexOf(i));lastFocus=document.activeElement;lb.hidden=false;document.body.style.overflow='hidden';lbShow();document.getElementById('lb-close').focus();}
+function lbClose(){lb.hidden=true;document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
+function lbStep(d){pos=(pos+d+seq.length)%seq.length;lbShow();}
+document.addEventListener('click',function(e){
+  var b=e.target.closest('[data-photo]'); if(!b)return;
+  var i=+b.dataset.photo, list=b.closest('#feat-tiles')?FEAT.map(function(f){return BYNAME[f.n]}):PROJ[PHOTOS[i].proj].idx;
+  lbOpen(list,i);
+});
+document.getElementById('lb-close').onclick=lbClose;
+document.getElementById('lb-prev').onclick=function(){lbStep(-1)};
+document.getElementById('lb-next').onclick=function(){lbStep(1)};
+lb.addEventListener('click',function(e){if(e.target===lb||e.target.id==='lb-stage')lbClose()});
+document.addEventListener('keydown',function(e){
+  if(lb.hidden)return;
+  if(e.key==='Escape')lbClose(); else if(e.key==='ArrowRight')lbStep(1); else if(e.key==='ArrowLeft')lbStep(-1);
+  else if(e.key==='Tab'){var f=[].slice.call(lb.querySelectorAll('button'));var i=f.indexOf(document.activeElement);e.preventDefault();f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus();}
+});
+(function(){var sx=null,sy=0;var st=document.getElementById('lb-stage');
+  st.addEventListener('pointerdown',function(e){sx=e.clientX;sy=e.clientY});
+  st.addEventListener('pointerup',function(e){if(sx==null)return;var dx=e.clientX-sx,dy=e.clientY-sy;sx=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))lbStep(dx<0?1:-1)});
+})();
+document.addEventListener('click',function(e){var b=e.target.closest('[data-open-gallery]');if(!b)return;var l=PROJ[b.dataset.openGallery].idx;lbOpen(l,l[0])});
+
+/* ---------------- router ---------------- */
+var ROUTES=['home','about','services','projects','gallery','contact'];
+var NAMES={home:'McKenna & Sons Builders',about:'About us',services:'Our services',projects:'Recent projects',gallery:'Gallery',contact:'Get a free quote'};
+var current=null, busy=false, pendingService=null, pendingProj=null;
+var nav=document.getElementById('nav'), menuBtn=document.getElementById('menu-btn');
+function closeMenu(){nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}
+menuBtn.addEventListener('click',function(){var o=!nav.classList.contains('open');nav.classList.toggle('open',o);menuBtn.setAttribute('aria-expanded',String(o))});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();menuBtn.focus()}});
+
+function show(page){
+  ROUTES.forEach(function(r){document.getElementById('view-'+r).hidden=(r!==page)});
+  current=page;
+  document.querySelectorAll('[data-nav]').forEach(function(a){if(a.dataset.nav===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  document.title=document.getElementById('view-'+page).dataset.title;
+  window.scrollTo(0,0);
+  if(page==='contact'&&pendingService){
+    document.querySelectorAll('#type-chips input').forEach(function(i){if(i.value===pendingService)i.checked=true});
+    pendingService=null;
+  }
+  if(page==='gallery'&&pendingProj){var g=document.getElementById('gp-'+pendingProj);pendingProj=null;if(g){var top=g.getBoundingClientRect().top+scrollY-90;window.scrollTo(0,top)}}
+}
+function focusView(page){var h=document.querySelector('#view-'+page+' h1');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}}
+function route(animate){
+  var h=(location.hash||'').slice(1); var page=ROUTES.indexOf(h)>-1?h:'home';
+  if(h==='main'){return}
+  closeMenu();
+  if(page===current){window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});return}
+  if(!animate||current===null||busy){show(page);if(current!==null&&animate)focusView(page);return}
+  layBricks(page,function(){show(page);focusView(page)});
+}
+document.addEventListener('click',function(e){var a=e.target.closest('[data-service]');if(a)pendingService=a.dataset.service;var g=e.target.closest('[data-goto]');if(g){pendingProj=g.dataset.goto;if(current==='gallery'){e.preventDefault();var el=document.getElementById('gp-'+pendingProj);pendingProj=null;if(el)el.scrollIntoView({behavior:reduce?'auto':'smooth'})}}});
+document.getElementById('skiplink').addEventListener('click',function(e){e.preventDefault();var h=document.querySelector('#view-'+current+' h1, #view-'+current+' h2');if(h){h.setAttribute('tabindex','-1');h.focus()}});
+window.addEventListener('hashchange',function(){route(true)});
+route(false);
+
+/* ---------------- falling-brick transition ---------------- */
+var wall=document.getElementById('wall'), mortar=wall.querySelector('.mortar');
+
+function clearWall(){[].slice.call(wall.querySelectorAll('.brick,.plaque')).forEach(function(n){n.remove()})}
+function layBricks(page,swap){
+  busy=true;
+  if(reduce||!wall.animate){
+    wall.classList.add('on');
+    var a=mortar.animate([{opacity:0},{opacity:1}],{duration:140,fill:'forwards'});
+    a.onfinish=function(){swap();var b=mortar.animate([{opacity:1},{opacity:0}],{duration:200,fill:'forwards'});b.onfinish=function(){wall.classList.remove('on');busy=false}};
+    return;
+  }
+  clearWall();
+  var W=innerWidth,H=innerHeight,small=W<640;
+  var bw=small?78:128,bh=small?28:44,g=small?4:6;
+  var rows=Math.ceil(H/(bh+g))+1,cols=Math.ceil(W/(bw+g))+2,bricks=[],frag=document.createDocumentFragment(),TX=BRICK.set(bw,bh);
+  for(var r=0;r<rows;r++){
+    var y=H-(r+1)*(bh+g)+g, off=(r%2)?-(bw+g)/2:0;
+    for(var c=0;c<cols;c++){
+      var x=off+c*(bw+g), d=document.createElement('div');
+      d.className='brick';d.style.width=bw+'px';d.style.height=bh+'px';
+      d.style.backgroundImage='url('+TX[(r*5+c*3+((r*c)%7))%TX.length]+')';
+      d.style.transform='translate('+x+'px,'+(-bh-60)+'px)';
+      frag.appendChild(d);bricks.push({el:d,x:x,y:y,r:r,c:c});
+    }
+  }
+  var pl=document.createElement('div');pl.className='plaque';
+  pl.innerHTML='<img src="img/crest.webp" alt=""><span></span>';pl.querySelector('span').textContent=NAMES[page];
+  frag.appendChild(pl);wall.appendChild(frag);wall.classList.add('on');
+  mortar.animate([{opacity:0},{opacity:1}],{duration:240,delay:100,fill:'forwards'});
+  var per=Math.max(34,Math.min(62,480/rows)),end=0;
+  bricks.forEach(function(b){
+    var dir=(b.r%2)?(cols-1-b.c):b.c;
+    var delay=b.r*per+dir*8+Math.random()*24, dur=340+Math.random()*90;
+    var sy=-bh-60-Math.random()*160, tilt=Math.random()*18-9;
+    b.el.animate([
+      {transform:'translate('+b.x+'px,'+sy+'px) rotate('+tilt+'deg)',offset:0,easing:'cubic-bezier(.55,0,.9,.55)'},
+      {transform:'translate('+b.x+'px,'+(b.y+5)+'px) rotate(0deg)',offset:.78,easing:'cubic-bezier(.2,.8,.3,1)'},
+      {transform:'translate('+b.x+'px,'+(b.y-3)+'px) rotate(0deg)',offset:.9},
+      {transform:'translate('+b.x+'px,'+b.y+'px) rotate(0deg)',offset:1}
+    ],{duration:dur,delay:delay,fill:'forwards'});
+    end=Math.max(end,delay+dur);
+  });
+  pl.animate([{opacity:0,transform:'translate(-50%,-30%)'},{opacity:1,transform:'translate(-50%,-50%)'}],{duration:240,delay:end-160,fill:'forwards',easing:'cubic-bezier(.2,.8,.3,1)'});
+  setTimeout(function(){
+    swap();
+    var hold=280,out=0;
+    pl.animate([{opacity:1},{opacity:0}],{duration:150,delay:hold,fill:'forwards'});
+    bricks.forEach(function(b){
+      var delay=hold+(rows-1-b.r)*26+Math.random()*60, dur=420+Math.random()*160;
+      b.el.animate([
+        {transform:'translate('+b.x+'px,'+b.y+'px) rotate(0deg)'},
+        {transform:'translate('+(b.x+Math.random()*60-30)+'px,'+(H+bh+80)+'px) rotate('+(Math.random()*50-25)+'deg)'}
+      ],{duration:dur,delay:delay,fill:'forwards',easing:'cubic-bezier(.5,0,.85,.4)'});
+      out=Math.max(out,delay+dur);
+    });
+    mortar.animate([{opacity:1},{opacity:0}],{duration:280,delay:hold+80,fill:'forwards'});
+    setTimeout(function(){wall.classList.remove('on');clearWall();busy=false},out+30);
+  },end+80);
+}
+
+/* ---------------- enquiry form ---------------- */
+var form=document.getElementById('enquiry-form'),ready=document.getElementById('ready'),readyText=document.getElementById('ready-text'),status=document.getElementById('ready-status');
+function val(n){return(form.elements[n].value||'').trim()}
+function setErr(id,msg){var i=document.getElementById('f-'+id),e=document.getElementById('e-'+id);e.textContent=msg||'';if(msg)i.setAttribute('aria-invalid','true');else i.removeAttribute('aria-invalid');return !msg}
+['name','phone','email','town','msg'].forEach(function(id){var i=document.getElementById('f-'+id);i.addEventListener('input',function(){if(i.getAttribute('aria-invalid'))setErr(id,'')})});
+form.addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var ok=true,first=null;
+  function check(id,cond,msg){if(!setErr(id,cond?'':msg)){ok=false;if(!first)first=document.getElementById('f-'+id)}}
+  var phone=val('phone'),email=val('email'),digits=phone.replace(/\D/g,'');
+  check('name',val('name').length>0,'Enter your name.');
+  if(!phone&&!email){check('phone',false,'Enter a phone number or an email address so we can reply.');setErr('email','')}
+  else{check('phone',!phone||digits.length>=10,'Enter a phone number with at least 10 digits.');check('email',!email||/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email),'Enter an email address like name@example.com.')}
+  check('town',val('town').length>0,'Enter the town or postcode where the work is.');
+  check('msg',val('message').length>0,'Tell us a little about the job.');
+  if(!ok){first.focus();return}
+  var types=[].slice.call(form.querySelectorAll('input[name=type]:checked')).map(function(i){return i.value});
+  var contact=(form.querySelector('input[name=contact]:checked')||{}).value||'';
+  var body=['Name: '+val('name'),phone?'Phone: '+phone:null,email?'Email: '+email:null,'Job location: '+val('town'),'Best way to reach me: '+contact,'','Type of work: '+(types.length?types.join(', '):'Not specified'),'Start: '+val('when'),'Drawings or planning: '+val('plans'),'','About the job:',val('message')].filter(function(l){return l!==null}).join('\n');
+  var subject='Website enquiry from '+val('name')+' ('+val('town')+')';
+  readyText.textContent=body;
+  document.getElementById('mail-link').href='mailto:'+EMAIL+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  document.getElementById('wa-link').href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hi, this is an enquiry from your website.\n\n'+body);
+  status.textContent='';form.hidden=true;ready.hidden=false;ready.focus();ready.scrollIntoView({block:'start',behavior:reduce?'auto':'smooth'});
+});
+document.getElementById('edit-enq').addEventListener('click',function(){ready.hidden=true;form.hidden=false;document.getElementById('f-name').focus()});
+document.getElementById('copy-enq').addEventListener('click',function(){
+  var t='To: '+EMAIL+'\n\n'+readyText.textContent;
+  function sel(){try{var r=document.createRange();r.selectNodeContents(readyText);var s=getSelection();s.removeAllRanges();s.addRange(r);status.textContent='Text selected. Copy it with Ctrl+C or Cmd+C.'}catch(e){}}
+  try{navigator.clipboard.writeText(t).then(function(){status.textContent='Copied. Paste it into an email or message to us.'},sel)}catch(e){sel()}
+});
+document.querySelectorAll('[data-top]').forEach(function(a){a.addEventListener('click',function(e){if(current==='home'){e.preventDefault();window.scrollTo({top:0,behavior:reduce?'auto':'smooth'})}})});
+})();
+</script>
+</body>
+</html>
